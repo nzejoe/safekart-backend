@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     
     # loacal apps
     'accounts',
+    'store',
 ]
 
 MIDDLEWARE = [
@@ -149,3 +150,8 @@ CORS_ALLOWED_ORIGINS = [
 
 # user models config
 AUTH_USER_MODEL = 'accounts.Account'
+
+
+# media config.
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR.joinpath('media')
