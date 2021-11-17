@@ -1,4 +1,3 @@
-from os import write
 from rest_framework import serializers
 
 from .models import Account
@@ -46,5 +45,21 @@ class PasswordResetCompleteSerializer(serializers.Serializer):
         
         if password != password2:
             raise serializers.ValidationError('The two password did not match')
+        
+        return super().validate(data)
+    
+    
+class PasswordChangeSerializer(serializers.Serializer):
+    password = serializers.CharField(write_only=True, required=True)
+    new_password = serializers.CharField(write_only=True, required=True)
+    new_password2 = serializers.CharField(write_only=True, required=True)
+    
+    def validate(self, data):
+        new_password = data['new_password']
+        new_password2 = data['new_password2']
+        
+        
+        if new_password != new_password2:
+            raise serializers.ValidationError('The new password did not match')
         
         return super().validate(data)

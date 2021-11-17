@@ -13,10 +13,15 @@ from rest_framework.authtoken.views import ObtainAuthToken
 from rest_framework.authtoken.models import Token
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from rest_framework import permissions
-from rest_framework.renderers import JSONRenderer
+from rest_framework import permissions, serializers, status
+
 from .models import Account
-from .serializers import PasswordResetCompleteSerializer, PasswordResetSerializer, UserRegisterSerializer
+from .serializers import(
+    PasswordResetCompleteSerializer, 
+    PasswordResetSerializer, 
+    UserRegisterSerializer,
+    PasswordChangeSerializer
+    )
 from . import signals
 
 class UserLogin(ObtainAuthToken):
@@ -137,6 +142,7 @@ class PasswordResetComplete(APIView):
     
     def post(self, request):
         data = {}
+        res_status = status.HTTP_200_OK
         try:
             user_id = request.session.get('user_id')
             user = Account.objects.get(pk=user_id)
@@ -154,6 +160,29 @@ class PasswordResetComplete(APIView):
                 data = {'done': True}
             else:
                 data = serializer.errors
+                res_status = status.HTTP_400_BAD_REQUEST
         else:
             data = data = {'invalid_link': 'The link is not valid!'}
-        return Response(data)
+            res_status = status.HTTP_404_NOT_FOUND
+        return Response(data, status=res_status)
+
+
+class PasswordChange(APIView):
+    permission_class = [permissions.IsAuthenticated,]
+    
+    def put(self, request):
+        serializer = PasswordChangeSerializer(data=request.data, context={'request': request})
+        
+        if serializer.is_valid(raise_exception=True):
+            user = request.user
+            old_password = serializer.validated_data.get("password")
+            new_password = serializer.validated_data.get("new_password")
+            
+            if not user.check_password(old_password):
+                raise serializers.ValidationError({'current_password': 'Your current password is not correct!'})
+            else:
+                user.set_password(new_password)
+                user.save()
+                return Response({'done': True, 'msg': 'Password changed successfully!'})
+        else:
+            return Response(serializer.errors)
