@@ -18,8 +18,12 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
+from accounts.views import UserLogin
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('auth/', include('rest_framework.urls')),
+    path('accounts/', include('accounts.urls')),
     path('products/', include('store.urls')),
 ]
 

@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     
     # 3rd party apps
     'rest_framework',
+    'rest_framework.authtoken',
     'corsheaders',
     
     # loacal apps
@@ -155,3 +156,11 @@ AUTH_USER_MODEL = 'accounts.Account'
 # media config.
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR.joinpath('media')
+
+
+# rest framework config
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+    ],
+}

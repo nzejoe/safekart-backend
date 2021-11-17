@@ -62,7 +62,7 @@ class Account(AbstractBaseUser):
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['username',]
     
-    onjects = AccountManager()
+    objects = AccountManager()
     
     def has_perm(self, perm, obj=None):
         return self.is_admin
