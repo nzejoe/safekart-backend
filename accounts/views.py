@@ -187,6 +187,10 @@ class PasswordChange(APIView):
         
         if serializer.is_valid(raise_exception=True):
             user = request.user
+            if not user.is_authenticated:
+                raise serializers.ValidationError(
+                    {'not_authenticated': 'Please login to perform password change!'})
+            
             old_password = serializer.validated_data.get("password")
             new_password = serializer.validated_data.get("new_password")
             
@@ -202,7 +206,7 @@ class PasswordChange(APIView):
 
         """[summary]
         Note:
-            1. Request from react frontend can't save and access from session storage, 
-                so i added extra data on serializer field named user_id which can be used
+            line-155. Request from react frontend can't save and access from session storage, 
+                so i added extra data on serializer field named user_id from react frontend which can be used
                 to identify the request id for the password reset
         """
