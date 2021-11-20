@@ -1,4 +1,3 @@
-import json
 from django.core.exceptions import ValidationError
 
 from django.shortcuts import render
@@ -25,6 +24,7 @@ from .serializers import(
 from . import signals
 
 class UserLogin(ObtainAuthToken):
+    permission_class = [permissions.AllowAny, ]
 
     def post(self, request, *args, **kwargs):
         
@@ -48,13 +48,18 @@ class UserLogout(APIView):
     permission_class = [permissions.IsAuthenticated,]
     
     def post(self, request):
-        user = request.user
         
-        token = Token.objects.get(user=user)
+        if not request.user.is_anonymous:
+            user = request.user
+            
+            token = Token.objects.get(user=user)
+            
+            token.delete()
         
-        token.delete()
-        
-        return Response({'success': 'you have been logged out!'})
+            return Response({'success': True})
+        else:
+            return Response({'success': False}, status=status.HTTP_403_FORBIDDEN)
+            
 
 
 class UserRegister(APIView):
@@ -100,7 +105,7 @@ class PasswordReset(APIView):
             user = Account.objects.get(email=email)
             uid = urlsafe_base64_encode(force_bytes(user.pk))
             token = default_token_generator.make_token(user)
-            site_domain = get_current_site(request)
+            site_domain = request.META.get('HTTP_ORIGIN')
             endpoint = f'{site_domain}/accounts/password_reset_confirm/{uid}/{token}/'
             
             context = {
@@ -121,32 +126,36 @@ class PasswordResetConfirm(APIView):
     
     def post(self, request, uidb64, token):
         data = {}
+        
         try:
             uid = urlsafe_base64_decode(uidb64).decode()
             user = Account.objects.get(pk=uid)
-        except (Account.DoesNotExist, ValidationError):
+        except (Account.DoesNotExist, ValidationError, UnicodeEncodeError):
             user = None
         
         
         if user is not None and default_token_generator.check_token(user, token):
             data["done"] = True
+            status_res = status.HTTP_200_OK
             data["user_id"] = uid
             request.session['user_id'] = uid
         else:
+            status_res = status.HTTP_404_NOT_FOUND
             data = {'invalid_link': 'The link is not valid!'}
         
-        return Response(data)
+        return Response(data, status=status_res)
         
 
 class PasswordResetComplete(APIView):
-    
+
     def post(self, request):
         data = {}
         res_status = status.HTTP_200_OK
         try:
-            user_id = request.session.get('user_id')
+            user_id = request.session.get('user_id') or request.data.get("user_id") # the last is from react frontend: refere to the note at the bottom
+            
             user = Account.objects.get(pk=user_id)
-        except (Account.DoesNotExist, ValidationError):
+        except (Account.DoesNotExist, ValidationError, TypeError):
             user = None
         serializer = PasswordResetCompleteSerializer(data=request.data, context={'request': request})
         
@@ -155,15 +164,18 @@ class PasswordResetComplete(APIView):
                 password = serializer.validated_data.get('password')
                 user.set_password(password)
                 user.save()
-                del request.session['user_id']
-                request.session.modified = True
+                try:  # check if user id was saved in session storage
+                    del request.session['user_id']
+                    request.session.modified = True
+                except KeyError:
+                    pass
                 data = {'done': True}
             else:
                 data = serializer.errors
                 res_status = status.HTTP_400_BAD_REQUEST
         else:
             data = data = {'invalid_link': 'The link is not valid!'}
-            res_status = status.HTTP_404_NOT_FOUND
+            res_status = status.HTTP_400_BAD_REQUEST
         return Response(data, status=res_status)
 
 
@@ -186,3 +198,11 @@ class PasswordChange(APIView):
                 return Response({'done': True, 'msg': 'Password changed successfully!'})
         else:
             return Response(serializer.errors)
+
+
+        """[summary]
+        Note:
+            1. Request from react frontend can't save and access from session storage, 
+                so i added extra data on serializer field named user_id which can be used
+                to identify the request id for the password reset
+        """
