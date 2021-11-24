@@ -16,12 +16,13 @@ class CartList(APIView):
     def get(self, request):
         cart_item = None
         if request.user.is_authenticated:
-            cart_item = Cartitem.objects.filter(user=request.user)
+            cart_item = Cartitem.objects.filter(user=request.user).order_by('product')
         else:
             cart_id = get_cart_id(request)
             try:
                 cart = Cart.objects.get(cart_id=cart_id)
-                cart_item = Cartitem.objects.filter(cart=cart)
+                cart_item = Cartitem.objects.filter(
+                    cart=cart).order_by('product')
             except Cart.DoesNotExist:
                 cart_item = None
                 
@@ -111,5 +112,38 @@ class AddToCart(APIView):
                     cart_item.save()
              
                 return Response({'success': cart_item.product.product_name + 'added to cart'})
+        
+        return Response()
+
+
+class IncrementCartItem(APIView):
+    
+    def post(self, request):
+        item_id = request.data.get('item_id')
+        cart_item = Cartitem.objects.get(id=item_id)
+        cart_item.quantity += 1
+        cart_item.save()       
+        return Response()
+    
+    
+class DecrementCartItem(APIView):
+    
+    def post(self, request):
+        item_id = request.data.get('item_id')
+        cart_item = Cartitem.objects.get(id=item_id)
+        if cart_item.quantity > 1:
+            cart_item.quantity -= 1
+            cart_item.save()       
+        else:
+            cart_item.delete()
+        return Response()
+    
+    
+class RemoveCartItem(APIView):
+    
+    def post(self, request):
+        item_id = request.data.get('item_id')
+        cart_item = Cartitem.objects.get(id=item_id)
+        cart_item.delete()
         
         return Response()
