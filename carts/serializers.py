@@ -20,6 +20,14 @@ class CartSerializer(serializers.Serializer):
 class CartItemSerializer(serializers.ModelSerializer):
     product = ProductSerializer()
     variation = ItemVariationSerializer()
+    total_amount = serializers.SerializerMethodField(method_name='get_total_amount')
     class Meta:
         model = Cartitem
         fields = '__all__'
+        
+    
+    def get_total_amount(self, object):
+        price = object.product.price
+        quantity = object.quantity
+        amount = price * quantity
+        return amount
