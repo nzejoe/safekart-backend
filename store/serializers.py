@@ -19,7 +19,7 @@ class ProductSerializer(serializers.ModelSerializer):
     
     class Meta:
         model = Product
-        fields = ['id', 'product_name','category',
+        fields = ['id', 'product_name','slug', 'category',
                   'description', 'image', 'price', 'stock', 'created', 'updated', 'active', 'variations']
 
     def get_variations(self, object):

@@ -1,6 +1,7 @@
 import uuid
 
 from django.db import models
+from django.utils.text import slugify
 
 # Create your models here.
 class Category(models.Model):
@@ -26,6 +27,7 @@ class Product(models.Model):
         editable=False
     )
     product_name = models.CharField(max_length=50, unique=True)
+    slug = models.SlugField(unique=True, null=True, blank=True)
     category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True, related_name='category')
     image = models.ImageField(upload_to='products', null=True, blank=True)
     description = models.TextField()
@@ -37,6 +39,10 @@ class Product(models.Model):
     
     def __str__(self):
         return self.product_name
+    
+    def save(self, *args, **kwargs):
+        self.slug = slugify(self.product_name, allow_unicode=True)
+        return super(Product, self).save(*args, **kwargs)
 
 
 class VariationManager(models.Manager):

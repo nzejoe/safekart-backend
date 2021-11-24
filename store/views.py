@@ -18,7 +18,7 @@ class ProductList(APIView):
 
 class ProductDetail(APIView):
     
-    def get(self, request, pk):
-        product = Product.objects.get(pk=pk)
+    def get(self, request, slug):
+        product = Product.objects.get(slug=slug)
         serializer = ProductSerializer(product)
         return Response(serializer.data)
