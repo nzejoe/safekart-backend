@@ -1,6 +1,13 @@
 from rest_framework import serializers
 
-from .models import Cartitem
+from store.serializers import ProductSerializer
+from .models import Cartitem, ItemVariation
+
+
+class ItemVariationSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ItemVariation
+        fields = '__all__'
 
 
 class CartSerializer(serializers.Serializer):
@@ -11,6 +18,8 @@ class CartSerializer(serializers.Serializer):
     
     
 class CartItemSerializer(serializers.ModelSerializer):
+    product = ProductSerializer()
+    variation = ItemVariationSerializer()
     class Meta:
         model = Cartitem
         fields = '__all__'
