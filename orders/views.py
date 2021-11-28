@@ -95,7 +95,7 @@ class PlaceOrder(APIView):
 
 
 class OrderHistory(APIView):
-    # permission_classes = [permissions.IsAuthenticated, ]
+    permission_classes = [permissions.IsAuthenticated, ]
     
     def get(self, request):
         my_orders = OrderDetail.objects.filter(user=request.user)
