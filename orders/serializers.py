@@ -1,4 +1,7 @@
+from django.db.models import fields
 from rest_framework import serializers
+
+from .models import OrderDetail, OrderProduct
 
 
 class OrderSerializer(serializers.Serializer):
@@ -20,3 +23,22 @@ class OrderSerializer(serializers.Serializer):
     city = serializers.CharField()
     state = serializers.CharField()
     country = serializers.CharField()
+    
+
+class OrderHistorySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = OrderDetail
+        fields = '__all__'
+
+
+class OrderProductSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = OrderProduct
+        fields = "__all__"
+
+        
+class OrderDetailSerializer(serializers.ModelSerializer):
+    products = OrderProductSerializer(many=True)
+    class Meta:
+        model = OrderDetail
+        fields = '__all__'

@@ -5,7 +5,7 @@ from rest_framework.views import APIView
 from rest_framework import permissions
 
 from carts.models import Cartitem
-from .serializers import OrderSerializer
+from .serializers import OrderHistorySerializer, OrderSerializer, OrderDetailSerializer
 from .models import Payment, OrderDetail, OrderProduct
 
 
@@ -92,3 +92,21 @@ class PlaceOrder(APIView):
             
         
         return Response(data)
+
+
+class OrderHistory(APIView):
+    # permission_classes = [permissions.IsAuthenticated, ]
+    
+    def get(self, request):
+        my_orders = OrderDetail.objects.filter(user=request.user)
+        serializer = OrderHistorySerializer(my_orders, many=True)
+        return Response(serializer.data)
+ 
+    
+class OrderDetailView(APIView):
+    permission_classes = [permissions.IsAuthenticated, ]
+    
+    def get(self, request, order_number):
+        order = OrderDetail.objects.get(user=request.user, order_number=order_number)
+        serializer = OrderDetailSerializer(order)
+        return Response(serializer.data)
