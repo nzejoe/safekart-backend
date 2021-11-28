@@ -1,7 +1,7 @@
 from django.db import models
 
 from accounts.models import Account
-from carts.models import ItemVariation, Product
+from carts.models import Product
 
 
 class Payment(models.Model):
@@ -14,7 +14,7 @@ class Payment(models.Model):
 
 
     def __str__(self):
-        return self.user
+        return self.user.username
 
 
 class OrderDetail(models.Model):
@@ -34,6 +34,7 @@ class OrderDetail(models.Model):
     country = models.CharField(max_length=50)
     tax = models.DecimalField(max_digits=20, decimal_places=2)
     total_amount = models.DecimalField(max_digits=20, decimal_places=2)
+    grand_total = models.DecimalField(max_digits=20, decimal_places=2)
     is_ordered = models.BooleanField(default=False)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
@@ -47,10 +48,10 @@ class OrderProduct(models.Model):
     order = models.ForeignKey(OrderDetail, on_delete=models.CASCADE, related_name='products')
     product = models.ForeignKey(Product, on_delete=models.SET_NULL, null=True)
     payment = models.ForeignKey(Payment, on_delete=models.SET_NULL, null=True, related_name='products')
-    user = models.ForeignKey(Account, on_delete=models.SET_NULL, related_name='ordered_products')
+    user = models.ForeignKey(Account, on_delete=models.SET_NULL, null=True, related_name='ordered_products')
     color = models.CharField(max_length=10, null=True, blank=True)
     size = models.CharField(max_length=10, null=True, blank=True)
-    model = models.CharField(max_length=10, null=True, blank=True)
+    brand = models.CharField(max_length=10, null=True, blank=True)
     price = models.DecimalField(max_digits=20, decimal_places=2)
     quantity = models.IntegerField()
     total_amount = models.DecimalField(max_digits=20, decimal_places=2)
@@ -62,5 +63,5 @@ class OrderProduct(models.Model):
         return super(OrderProduct, self).save(*args, **kwargs)
     
     def __str__(self):
-        return self.product
+        return self.product.product_name
     
