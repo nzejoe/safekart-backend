@@ -98,7 +98,7 @@ class OrderHistory(APIView):
     permission_classes = [permissions.IsAuthenticated, ]
     
     def get(self, request):
-        my_orders = OrderDetail.objects.filter(user=request.user)
+        my_orders = OrderDetail.objects.filter(user=request.user).order_by('-created')
         serializer = OrderHistorySerializer(my_orders, many=True)
         return Response(serializer.data)
  
