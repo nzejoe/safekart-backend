@@ -1,10 +1,11 @@
+from django.http import request
 from django.shortcuts import render
 
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
 
-from .serializers import ProductSerializer
+from .serializers import ProductSerializer, ReviewSerialzer
 from .models import Product
 
 
@@ -22,3 +23,13 @@ class ProductDetail(APIView):
         product = Product.objects.get(slug=slug)
         serializer = ProductSerializer(product)
         return Response(serializer.data)
+
+
+class AddReview(APIView):
+    
+    def post(self, request):
+        serializer = ReviewSerialzer(data=request.data)
+        if serializer.is_valid(raise_exception=True):
+            serializer.save()
+        
+        return Response({'created': True})

@@ -3,6 +3,8 @@ import uuid
 from django.db import models
 from django.utils.text import slugify
 
+from accounts.models import Account
+
 # Create your models here.
 class Category(models.Model):
     name = models.CharField(max_length=50, unique=True)
@@ -70,3 +72,17 @@ class Variation(models.Model):
     
     def __str__(self):
         return self.product.product_name
+
+
+class Review(models.Model):
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='reviews')
+    user = models.ForeignKey(Account, on_delete=models.CASCADE, related_name='reviews')
+    subject = models.CharField(max_length=100, blank=True, null=True)
+    review = models.TextField(blank=True, null=True)
+    rating = models.FloatField()
+    created = models.DateTimeField(auto_now_add=True)
+    updated = models.DateTimeField(auto_now=True)
+    
+    
+    def __str__(self):
+        return self.subject
