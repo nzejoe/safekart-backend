@@ -1,7 +1,7 @@
-from django.db.models.aggregates import Avg
+from django.db.models import fields
 from rest_framework import serializers
 
-from .models import Product, Review, Variation
+from .models import Product, Review, Variation, ProductGallery
 
 
 class VariationsSerializer(serializers.ModelSerializer):
@@ -17,11 +17,23 @@ class ReviewSerialzer(serializers.ModelSerializer):
     class Meta:
         model = Review
         fields = "__all__"
+        
+
+class GallerySerialzer(serializers.ModelSerializer):
+    thumb = serializers.SerializerMethodField(method_name='get_thumb')
+    class Meta:
+        model = ProductGallery
+        fields = ['image', 'thumb']
+        
+    
+    def get_thumb(self, obj):
+        return obj.thumb.url
     
 
 class ProductSerializer(serializers.ModelSerializer):
     category = serializers.StringRelatedField(read_only=True)
     variations = VariationsSerializer(read_only=True, many=True)
+    gallery = GallerySerialzer(many=True, read_only=True)
     
     variations = serializers.SerializerMethodField(method_name='get_variations')
     reviews = ReviewSerialzer(many=True, read_only=True)
@@ -30,7 +42,7 @@ class ProductSerializer(serializers.ModelSerializer):
     class Meta:
         model = Product
         fields = ['id', 'product_name','slug', 'category',
-                  'description', 'image', 'price', 'stock', 'created', 'updated', 'active', 'variations', 'reviews',  'rating']
+                  'description', 'image', 'price', 'stock', 'created', 'updated', 'active', 'variations', 'reviews', 'gallery', 'rating']
 
     def get_variations(self, object):
         variations = {}

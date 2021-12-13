@@ -2,6 +2,9 @@ import uuid
 
 from django.db import models
 from django.utils.text import slugify
+from PIL import Image
+from imagekit.models import ImageSpecField, ProcessedImageField
+from imagekit.processors import ResizeToFill
 
 from accounts.models import Account
 
@@ -43,8 +46,36 @@ class Product(models.Model):
         return self.product_name
     
     def save(self, *args, **kwargs):
+        super().save(*args, **kwargs)
+        
         self.slug = slugify(self.product_name, allow_unicode=True)
-        return super(Product, self).save(*args, **kwargs)
+        
+        # get this product image
+        img = Image.open(self.image.path)
+        
+        # check if image is greater than 500px
+        if img.width > 500 or img.height > 500:
+            # set default output size
+            output_size = (500, 500)
+            img.thumbnail(output_size)
+            img.save(self.image.path) # overwrite the image
+
+
+class ProductGallery(models.Model):
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='gallery')
+    image = ProcessedImageField(
+        upload_to='products/gallery', processors=[ResizeToFill(500, 500), ], format='JPEG', options={'quality': 60})
+    thumb = ImageSpecField(source='image', processors=[ResizeToFill(
+        100, 100), ],  format='JPEG', options={'quality': 60})
+    
+    class Meta:
+        verbose_name = 'gallery'
+        verbose_name_plural = 'galleries'
+        
+    
+    def __str__(self):
+        return self.product.product_name
+        
 
 
 class VariationManager(models.Manager):
