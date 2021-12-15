@@ -85,3 +85,9 @@ class ProductSerializer(serializers.ModelSerializer):
         if count:
             average = total/count
         return round(average, 2)
+
+
+class TopProductSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Product
+        fields = '__all__'
