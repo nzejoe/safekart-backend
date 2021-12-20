@@ -1,7 +1,6 @@
-from django.db.models import fields
 from rest_framework import serializers
 
-from .models import Product, Review, Variation, ProductGallery
+from .models import Category, Product, Review, Variation, ProductGallery
 
 
 class VariationsSerializer(serializers.ModelSerializer):
@@ -90,4 +89,10 @@ class ProductSerializer(serializers.ModelSerializer):
 class TopProductSerializer(serializers.ModelSerializer):
     class Meta:
         model = Product
+        fields = '__all__'
+        
+        
+class CategorySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Category
         fields = '__all__'

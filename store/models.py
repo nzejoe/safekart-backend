@@ -11,7 +11,8 @@ from accounts.models import Account
 # Create your models here.
 class Category(models.Model):
     name = models.CharField(max_length=50, unique=True)
-    image = models.ImageField(upload_to='category', null=True, blank=True)
+    image = ProcessedImageField(
+        upload_to='products/category', processors=[ResizeToFill(1200, 675), ], format='JPEG', options={'quality': 60}, null=True, blank=True) # (1200 x 675) is the actual size of the images i want to upload
     description = models.CharField(max_length=200, null=True, blank=True)
     created = models.DateTimeField(auto_now_add=True)
     

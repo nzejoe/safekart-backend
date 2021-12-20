@@ -6,8 +6,8 @@ from rest_framework.views import APIView
 from rest_framework import permissions
 
 from orders.models import OrderProduct
-from .serializers import ProductSerializer, ReviewSerialzer, TopProductSerializer
-from .models import Product, Review
+from .serializers import ProductSerializer, ReviewSerialzer, TopProductSerializer, CategorySerializer
+from .models import Category, Product, Review
 
 
 class ProductList(APIView):
@@ -96,3 +96,11 @@ class DeleteReview(APIView):
         
         return Response(data)
         
+
+class CategoryListView(APIView):
+    
+    def get(self, request):
+        # filter categories with image
+        categories = Category.objects.exclude(image__isnull=True).exclude(image__exact='') 
+        serializer = CategorySerializer(categories, many=True)    
+        return Response(serializer.data)
