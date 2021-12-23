@@ -43,6 +43,8 @@ class AddToCart(APIView):
             color = data['color']
             size = data['size']
             brand = data['brand']
+            quantity = data['quantity']
+          
             
             # create a variation id
             variation_id = f'{product_id}{color}{size}{brand}'
@@ -70,7 +72,7 @@ class AddToCart(APIView):
                 if existing_item:
                     cart_item = Cartitem.objects.get(
                         product=product, variation__variation_id=variation_id, user=user)
-                    cart_item.quantity += 1
+                    cart_item.quantity += quantity
                     cart_item.save()
                 else:
                     variarion = ItemVariation.objects.create(
@@ -85,7 +87,7 @@ class AddToCart(APIView):
                     cart_item.cart = cart
                     cart_item.product = product
                     cart_item.variation = variarion
-                    cart_item.quantity = 1
+                    cart_item.quantity = quantity
                     cart_item.save()
             # if not logged in
             else:  
@@ -94,7 +96,7 @@ class AddToCart(APIView):
                 
                 if existing_item:
                     cart_item = Cartitem.objects.get(product=product, variation__variation_id=variation_id)
-                    cart_item.quantity += 1
+                    cart_item.quantity += quantity
                     cart_item.save()
                 else:
                     variarion = ItemVariation.objects.create(
@@ -108,11 +110,10 @@ class AddToCart(APIView):
                     cart_item.cart = cart
                     cart_item.product = product
                     cart_item.variation = variarion
-                    cart_item.quantity = 1
+                    cart_item.quantity = quantity
                     cart_item.save()
              
                 return Response({'success': cart_item.product.product_name + 'added to cart'})
-        
         return Response()
 
 

@@ -15,6 +15,7 @@ class CartSerializer(serializers.Serializer):
     color = serializers.CharField(allow_null=True, allow_blank=True)
     size = serializers.CharField(allow_null=True, allow_blank=True)
     brand = serializers.CharField(allow_null=True, allow_blank=True)
+    quantity = serializers.IntegerField()
     
     
 class CartItemSerializer(serializers.ModelSerializer):
