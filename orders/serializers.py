@@ -31,10 +31,9 @@ class OrderHistorySerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
-class OrderProductSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = OrderProduct
-        fields = "__all__"
+class OrderProductSerializer(serializers.Serializer):
+    product_name = serializers.CharField()
+    total = serializers.IntegerField()
 
         
 class OrderDetailSerializer(serializers.ModelSerializer):
@@ -42,3 +41,5 @@ class OrderDetailSerializer(serializers.ModelSerializer):
     class Meta:
         model = OrderDetail
         fields = '__all__'
+
+

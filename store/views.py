@@ -1,4 +1,5 @@
 from django.db.models import Sum
+from django.db.models.aggregates import Count
 from django.shortcuts import render
 
 from rest_framework.response import Response
@@ -26,9 +27,11 @@ class TopProducts(APIView):
         #* annotate() calculate the total of each product sales
         #* value_list() return id of each the product, flat=True makes sure to return list of id instead of list of id tuples
         top_products = OrderProduct.objects.values('product_id').annotate(
-            total=Sum('quantity')).order_by('-total')[:3].values_list('product_id', flat=True)
+            total=Sum('quantity')).order_by('-total')[:6].values_list('product_id', flat=True)
         products = Product.objects.filter(pk__in=top_products)
         serializer = TopProductSerializer(products, many=True)
+        
+       
         return Response(serializer.data)
 
 

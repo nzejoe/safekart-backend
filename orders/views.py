@@ -1,11 +1,12 @@
 from django.shortcuts import render
+from django.db.models import Sum
 
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework import permissions
 
 from carts.models import Cartitem
-from .serializers import OrderHistorySerializer, OrderSerializer, OrderDetailSerializer
+from .serializers import OrderHistorySerializer, OrderSerializer, OrderDetailSerializer, OrderProductSerializer
 from .models import Payment, OrderDetail, OrderProduct
 
 
@@ -94,7 +95,7 @@ class PlaceOrder(APIView):
         return Response(data)
 
 
-class OrderHistory(APIView):
+class UserOrderHistory(APIView):
     permission_classes = [permissions.IsAuthenticated, ]
     
     def get(self, request):
@@ -109,4 +110,29 @@ class OrderDetailView(APIView):
     def get(self, request, order_number):
         order = OrderDetail.objects.get(user=request.user, order_number=order_number)
         serializer = OrderDetailSerializer(order)
+        return Response(serializer.data)
+
+
+class OrdersHistory(APIView):
+    permission_classes = [permissions.AllowAny, ]
+    
+    def get(self, request):
+        orders = OrderDetail.objects.all().order_by('-created')
+        serializer = OrderHistorySerializer(orders, many=True)
+        return Response(serializer.data)
+    
+
+class TopSelling(APIView):
+    permission_classes = [permissions.AllowAny, ]
+
+    def get(self, request):
+        top = OrderProduct.objects.values('product_name').annotate(
+            total=Sum('quantity')).order_by('-total')[:5]
+
+        serializer = OrderProductSerializer(top, many=True)
+        print()
+        for p in top:
+            print(p)
+        print()
+
         return Response(serializer.data)
