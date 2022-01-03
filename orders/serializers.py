@@ -23,7 +23,12 @@ class OrderSerializer(serializers.Serializer):
     city = serializers.CharField()
     state = serializers.CharField()
     country = serializers.CharField()
-    
+ 
+ 
+class AllOrdersSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = OrderProduct
+        fields = '__all__'   
 
 class OrderHistorySerializer(serializers.ModelSerializer):
     class Meta:
@@ -31,9 +36,16 @@ class OrderHistorySerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
-class OrderProductSerializer(serializers.Serializer):
+class TopProductSerializer(serializers.Serializer):
     product_name = serializers.CharField()
     total = serializers.IntegerField()
+
+
+class OrderProductSerializer(serializers.ModelSerializer):
+    order = OrderHistorySerializer()
+    class Meta:
+        model = OrderProduct
+        fields = '__all__'
 
         
 class OrderDetailSerializer(serializers.ModelSerializer):

@@ -6,29 +6,31 @@ from rest_framework.views import APIView
 from rest_framework import permissions
 
 from carts.models import Cartitem
-from .serializers import OrderHistorySerializer, OrderSerializer, OrderDetailSerializer, OrderProductSerializer
+from .serializers import (OrderHistorySerializer, OrderSerializer,
+                          OrderDetailSerializer, TopProductSerializer, OrderProductSerializer)
 from .models import Payment, OrderDetail, OrderProduct
 
 
 class PlaceOrder(APIView):
     permission_classes = [permissions.IsAuthenticated, ]
-    
+
     def post(self, request, data=None):
-        serializer = OrderSerializer(data=request.data, context={'request': request})
-        
+        serializer = OrderSerializer(
+            data=request.data, context={'request': request})
+
         if serializer.is_valid(raise_exception=True):
             current_user = request.user
             cart_items = Cartitem.objects.filter(user=current_user)
-            
+
             data = serializer.validated_data
-            
+
             # payment
             payment_id = data['payment_id']
             grand_total = data['grand_total']
             payment_method = data['payment_method']
             payment_status = data['payment_status']
-            
-            #order
+
+            # order
             order_number = data['order_number']
             total_amount = data['total_amount']
             tax = data['tax']
@@ -43,7 +45,7 @@ class PlaceOrder(APIView):
             city = data['city']
             state = data['state']
             country = data['country']
-            
+
             # create payment
             payment = Payment()
             payment.payment_id = payment_id
@@ -52,7 +54,7 @@ class PlaceOrder(APIView):
             payment.payment_method = payment_method
             payment.status = payment_status
             payment.save()
-            
+
             # create order
             order = OrderDetail()
             order.order_number = order_number
@@ -74,7 +76,7 @@ class PlaceOrder(APIView):
             order.grand_total = grand_total
             order.is_ordered = True
             order.save()
-            
+
             # order products
             for item in cart_items:
                 product = OrderProduct()
@@ -87,40 +89,41 @@ class PlaceOrder(APIView):
                 product.price = item.product.price
                 product.quantity = item.quantity
                 product.save()
-                
+
                 # delete cart_item after
                 item.delete()
-            
-        
+
         return Response(data)
 
 
 class UserOrderHistory(APIView):
     permission_classes = [permissions.IsAuthenticated, ]
-    
+
     def get(self, request):
-        my_orders = OrderDetail.objects.filter(user=request.user).order_by('-created')
+        my_orders = OrderDetail.objects.filter(
+            user=request.user).order_by('-created')
         serializer = OrderHistorySerializer(my_orders, many=True)
         return Response(serializer.data)
- 
-    
+
+
 class OrderDetailView(APIView):
     permission_classes = [permissions.IsAuthenticated, ]
-    
+
     def get(self, request, order_number):
-        order = OrderDetail.objects.get(user=request.user, order_number=order_number)
+        order = OrderDetail.objects.get(
+            user=request.user, order_number=order_number)
         serializer = OrderDetailSerializer(order)
         return Response(serializer.data)
 
 
-class OrdersHistory(APIView):
+class OrderHistory(APIView):
     permission_classes = [permissions.AllowAny, ]
-    
+
     def get(self, request):
-        orders = OrderDetail.objects.all().order_by('-created')
-        serializer = OrderHistorySerializer(orders, many=True)
+        orders = OrderProduct.objects.all().order_by('-created')
+        serializer = OrderProductSerializer(orders, many=True)
         return Response(serializer.data)
-    
+
 
 class TopSelling(APIView):
     permission_classes = [permissions.AllowAny, ]
@@ -129,10 +132,6 @@ class TopSelling(APIView):
         top = OrderProduct.objects.values('product_name').annotate(
             total=Sum('quantity')).order_by('-total')[:5]
 
-        serializer = OrderProductSerializer(top, many=True)
-        print()
-        for p in top:
-            print(p)
-        print()
+        serializer = TopProductSerializer(top, many=True)
 
         return Response(serializer.data)
