@@ -45,6 +45,11 @@ class OrderDetail(models.Model):
     
 
 class OrderProduct(models.Model):
+    STATUS = (
+        ('pending', 'Pending'),
+        ('out for delivery', 'Out for delivery'),
+        ('delivered', 'Delivered'), 
+    )
     order = models.ForeignKey(OrderDetail, on_delete=models.CASCADE, related_name='products')
     product = models.ForeignKey(Product, on_delete=models.SET_NULL, null=True)
     product_name = models.CharField(max_length=100, blank=True, null=True)
@@ -56,6 +61,7 @@ class OrderProduct(models.Model):
     price = models.DecimalField(max_digits=20, decimal_places=2)
     quantity = models.IntegerField()
     total_amount = models.DecimalField(max_digits=20, decimal_places=2)
+    status = models.CharField(max_length=20, choices=STATUS, default='pending')
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
     
