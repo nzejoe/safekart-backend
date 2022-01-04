@@ -23,6 +23,7 @@ class OrderSerializer(serializers.Serializer):
     city = serializers.CharField()
     state = serializers.CharField()
     country = serializers.CharField()
+    
  
  
 class AllOrdersSerializer(serializers.ModelSerializer):
@@ -46,6 +47,44 @@ class OrderProductSerializer(serializers.ModelSerializer):
     class Meta:
         model = OrderProduct
         fields = '__all__'
+        
+    def update(self, instance, validated_data):
+        instance.order = validated_data.get('order', instance.order)
+        instance.product = validated_data.get('product', instance.product)
+        instance.product_name = validated_data.get('product_name', instance.product_name)
+        instance.payment = validated_data.get('payment', instance.payment)
+        instance.user = validated_data.get('user', instance.user)
+        instance.color = validated_data.get('color', instance.color)
+        instance.size = validated_data.get('size', instance.size)
+        instance.brand = validated_data.get('brand', instance.brand)
+        instance.price = validated_data.get('price', instance.price)
+        instance.quantity = validated_data.get('quantity', instance.quantity)
+        instance.total_amount = validated_data.get('total_amount', instance.total_amount)
+        instance.status = validated_data.get('status', instance.status)
+        
+        return super().update(instance, validated_data)
+
+
+class OrderUpdateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = OrderProduct
+        fields = '__all__'
+        
+    def update(self, instance, validated_data):
+        instance.order = validated_data.get('order', instance.order)
+        instance.product = validated_data.get('product', instance.product)
+        instance.product_name = validated_data.get('product_name', instance.product_name)
+        instance.payment = validated_data.get('payment', instance.payment)
+        instance.user = validated_data.get('user', instance.user)
+        instance.color = validated_data.get('color', instance.color)
+        instance.size = validated_data.get('size', instance.size)
+        instance.brand = validated_data.get('brand', instance.brand)
+        instance.price = validated_data.get('price', instance.price)
+        instance.quantity = validated_data.get('quantity', instance.quantity)
+        instance.total_amount = validated_data.get('total_amount', instance.total_amount)
+        instance.status = validated_data.get('status', instance.status)
+        
+        return super().update(instance, validated_data)
 
         
 class OrderDetailSerializer(serializers.ModelSerializer):

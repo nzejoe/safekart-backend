@@ -7,7 +7,9 @@ from rest_framework import permissions
 
 from carts.models import Cartitem
 from .serializers import (OrderHistorySerializer, OrderSerializer,
-                          OrderDetailSerializer, TopProductSerializer, OrderProductSerializer)
+                          OrderDetailSerializer, TopProductSerializer, OrderProductSerializer,
+                          OrderUpdateSerializer
+                          )
 from .models import Payment, OrderDetail, OrderProduct
 
 
@@ -81,6 +83,7 @@ class PlaceOrder(APIView):
             for item in cart_items:
                 product = OrderProduct()
                 product.order = order
+                product.payment = payment
                 product.product = item.product
                 product.user = current_user
                 product.color = item.variation.color
@@ -135,3 +138,18 @@ class TopSelling(APIView):
         serializer = TopProductSerializer(top, many=True)
 
         return Response(serializer.data)
+
+
+class OrderUpdate(APIView):
+    permission_classes = [permissions.AllowAny, ]
+
+    def put(self, request, pk):
+        ''' this function update individual product in an order '''
+        order_product = OrderProduct.objects.get(pk=pk)
+        serializer = OrderUpdateSerializer(order_product, data=request.data)
+        
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        else:
+            return Response(serializer.errors)
