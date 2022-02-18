@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-dmbnh!-%$-#^pk_y*nfpg7@aup)$q_5c!@a6)tcfc%7f4svb-u'
+SECRET_KEY = env.str('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -95,7 +95,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'safekart',
         'USER': 'postgres',
-        'PASSWORD': env.str('DB_PASSWORD'),
+        'PASSWORD': env.str('DATABASE_PASSWORD'),
         'PORT': 5432,
         'HOST': 'localhost',
     }
