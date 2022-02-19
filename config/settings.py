@@ -41,14 +41,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
+
     # 3rd party apps
     'rest_framework',
     'rest_framework.authtoken',
     'corsheaders',
     'imagekit',
     'storages',
-    
+
     # loacal apps
     'accounts',
     'store',
@@ -155,6 +155,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://localhost:3001",
+    'codegenesis-safekart.netlify.app',
 ]
 # CORS_ORIGIN_ALLOW_ALL = True
 
