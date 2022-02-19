@@ -155,7 +155,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://localhost:3001",
-    'codegenesis-safekart.netlify.app',
+    'https://codegenesis-safekart.netlify.app',
 ]
 # CORS_ORIGIN_ALLOW_ALL = True
 
