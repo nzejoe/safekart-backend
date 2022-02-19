@@ -191,7 +191,5 @@ STATICFILES_STORAGE = 'storages.backends.s3boto3.S3StaticStorage'
 AWS_QUERYSTRING_AUTH = False
 AWS_LOCATION = 'static'
 AWS_S3_FILE_OVERWRITE = False
-STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    BASE_DIR.joinpath('static'),
-]
+# aws s3 media
+DEFAULT_FILE_STORAGE = 'config.media_storages.MediaStorage'
