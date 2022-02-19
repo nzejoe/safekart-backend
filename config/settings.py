@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'corsheaders',
     'imagekit',
+    'storages',
     
     # loacal apps
     'accounts',
@@ -179,3 +180,18 @@ REST_FRAMEWORK = {
 
 # email backend config
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# AWS CONFIG
+AWS_ACCESS_KEY_ID = env.str('AWS_ACCESS_KEY_ID')
+AWS_SECRET_ACCESS_KEY = env.str('AWS_SECRET_ACCESS_KEY')
+AWS_STORAGE_BUCKET_NAME = env.str('AWS_STORAGE_BUCKET_NAME')
+AWS_DEFAULT_ACL = None
+STATICFILES_STORAGE = 'storages.backends.s3boto3.S3StaticStorage'
+# this will prevent access key and secret key append to static file url
+AWS_QUERYSTRING_AUTH = False
+AWS_LOCATION = 'static'
+AWS_S3_FILE_OVERWRITE = False
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    BASE_DIR.joinpath('static'),
+]
