@@ -179,9 +179,6 @@ REST_FRAMEWORK = {
 }
 
 
-# email backend config
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-
 # AWS CONFIG
 AWS_ACCESS_KEY_ID = env.str('AWS_ACCESS_KEY_ID')
 AWS_SECRET_ACCESS_KEY = env.str('AWS_SECRET_ACCESS_KEY')
@@ -194,3 +191,12 @@ AWS_LOCATION = 'static'
 AWS_S3_FILE_OVERWRITE = False
 # aws s3 media
 DEFAULT_FILE_STORAGE = 'config.media_storages.MediaStorage'
+
+# email configurations
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = '587'
+EMAIL_HOST_USER = 'codegenesis.baseone@gmail.com'
+EMAIL_HOST_PASSWORD = env.str('EMAIL_HOST_PASSWORD')
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
