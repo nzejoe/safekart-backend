@@ -1,3 +1,5 @@
+import json
+
 from django.core.exceptions import ValidationError
 from django.contrib import auth
 
@@ -23,7 +25,8 @@ from .serializers import(
     UserRegisterSerializer,
     PasswordChangeSerializer
     )
-from carts.models import Cartitem
+from carts.models import Cartitem, ItemVariation
+from store.models import Product
 from . import signals
 
 class UserLogin(ObtainAuthToken):
@@ -35,21 +38,43 @@ class UserLogin(ObtainAuthToken):
         if serializer.is_valid(raise_exception=True):
             user  = serializer.validated_data.get('user')
             
-            # transfer all cart items from this session to user when logged in
-            # try:
-            #     cart_id = get_cart_id(request)
-            #     cart = Cart.objects.get(cart_id=cart_id)
-            # except Cart.DoesNotExist:
-            #     pass
+            cart_items = json.loads(request.data.get('cartItems'))
             
-            # cart_items = Cartitem.objects.filter(cart=cart)
-            # for item in cart_items:
-            #     item.user = user
-            #     item.save()
-            
+            if cart_items:
+                for item in cart_items:
+                    product = Product.objects.get(id=item.get('product')['id'])
+                    color = item['variation']['color']
+                    size = item['variation']['size']
+                    brand = item['variation']['brand']
+                    quantity = item['quantity']
+                    variation_id = f'{product.id}{color}{size}{brand}'
+
+                    existing_item = Cartitem.objects.filter(
+                        product=product, variation__variation_id=variation_id, user=user).exists()
+
+                    if existing_item:
+                        cart_item = Cartitem.objects.get(
+                            product=product, variation__variation_id=variation_id, user=user)
+                        cart_item.quantity += quantity
+                        cart_item.save()
+                    else:
+                        variarion = ItemVariation.objects.create(
+                            variation_id=variation_id,
+                            color=color,
+                            size=size,
+                            brand=brand
+                        )
+
+                        # variarion.save()
+                        cart_item = Cartitem()
+                        cart_item.user = user
+                        cart_item.product = product
+                        cart_item.variation = variarion
+                        cart_item.quantity = quantity
+                        cart_item.save()
+                        
             token, created = Token.objects.get_or_create(user=user)
-            
-            request.session.create()
+        
             
             data = {
                 'username': user.username,
@@ -71,9 +96,7 @@ class UserLogout(APIView):
             token = Token.objects.get(user=user)
             
             token.delete()
-            
-            request.session.flush()
-            
+                        
             return Response({'success': True})
         else:
             return Response({'success': False}, status=status.HTTP_403_FORBIDDEN)
