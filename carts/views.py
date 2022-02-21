@@ -47,54 +47,31 @@ class AddToCart(APIView):
                     {'product': 'product not found!'})
                 
             # if user is logged in
-            # if request.user.is_authenticated:
-            #     user = Account.objects.get(pk=request.user.id)
-            #     existing_item = Cartitem.objects.filter(
-            #         product=product, variation__variation_id=variation_id, user=user).exists()
-            #     if existing_item:
-            #         cart_item = Cartitem.objects.get(
-            #             product=product, variation__variation_id=variation_id, user=user)
-            #         cart_item.quantity += quantity
-            #         cart_item.save()
-            #     else:
-            #         variarion = ItemVariation.objects.create(
-            #             variation_id=variation_id,
-            #             color=color,
-            #             size=size,
-            #             brand=brand
-            #         )
+            if request.user.is_authenticated:
+                user = Account.objects.get(pk=request.user.id)
+                existing_item = Cartitem.objects.filter(
+                    product=product, variation__variation_id=variation_id, user=user).exists()
+                if existing_item:
+                    cart_item = Cartitem.objects.get(
+                        product=product, variation__variation_id=variation_id, user=user)
+                    cart_item.quantity += quantity
+                    cart_item.save()
+                else:
+                    variarion = ItemVariation.objects.create(
+                        variation_id=variation_id,
+                        color=color,
+                        size=size,
+                        brand=brand
+                    )
                     
-            #         # variarion.save()
-            #         cart_item = Cartitem()
-            #         cart_item.user = user
-            #         cart_item.product = product
-            #         cart_item.variation = variarion
-            #         cart_item.quantity = quantity
-            #         cart_item.save()
-            # # if not logged in
-            # else:  
-            #     # check if cart item already exist
-            #     existing_item = Cartitem.objects.filter(product=product, variation__variation_id=variation_id, cart=cart).exists()
-                
-            #     if existing_item:
-            #         cart_item = Cartitem.objects.get(product=product, variation__variation_id=variation_id)
-            #         cart_item.quantity += quantity
-            #         cart_item.save()
-            #     else:
-            #         variarion = ItemVariation.objects.create(
-            #             variation_id=variation_id,
-            #             color=color,
-            #             size=size,
-            #             brand=brand
-            #         )
-            #         # variarion.save()
-            #         cart_item = Cartitem()
-            #         cart_item.cart = cart
-            #         cart_item.product = product
-            #         cart_item.variation = variarion
-            #         cart_item.quantity = quantity
-            #         cart_item.save()
-             
+                    # variarion.save()
+                    cart_item = Cartitem()
+                    cart_item.user = user
+                    cart_item.product = product
+                    cart_item.variation = variarion
+                    cart_item.quantity = quantity
+                    cart_item.save()
+                                 
                 return Response({'success': cart_item.product.product_name + 'added to cart'})
         return Response()
 
