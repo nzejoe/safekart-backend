@@ -29,7 +29,8 @@ SECRET_KEY = env.str('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env.bool('DEBUG')
 
-ALLOWED_HOSTS = ['codegenesis-safekart.herokuapp.com', 'codegenesis-safekart.netlify.app', 'localhost']
+ALLOWED_HOSTS = ['codegenesis-safekart.herokuapp.com',
+                 'codegenesis-safekart.netlify.app', 'localhost']
 
 
 # Application definition
@@ -91,16 +92,28 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': env.str('DATABASE_NAME'),
-        'USER': env.str('DATABASE_USER'),
-        'PASSWORD': env.str('DATABASE_PASSWORD'),
-        'PORT': 5432,
-        'HOST': env.str('DATABASE_HOST'),
+if DEBUG:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': 'safekart',
+            'USER': 'postgres',
+            'PASSWORD': env.str('DATABASE_PASSWORD'),
+            'PORT': 5432,
+            'HOST': 'localhost',
+        }
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': env.str('DATABASE_NAME'),
+            'USER': env.str('DATABASE_USER'),
+            'PASSWORD': env.str('DATABASE_PASSWORD'),
+            'PORT': 5432,
+            'HOST': env.str('DATABASE_HOST'),
+        }
+    }
 
 
 # Password validation

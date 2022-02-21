@@ -23,30 +23,29 @@ from .serializers import(
     UserRegisterSerializer,
     PasswordChangeSerializer
     )
-from carts.models import Cartitem, Cart
+from carts.models import Cartitem
 from . import signals
 
 class UserLogin(ObtainAuthToken):
     permission_class = [permissions.AllowAny, ]
 
     def post(self, request, *args, **kwargs):
-        
         serializer = self.serializer_class(data=request.data, context={'request': request})
         cart = None
         if serializer.is_valid(raise_exception=True):
             user  = serializer.validated_data.get('user')
             
             # transfer all cart items from this session to user when logged in
-            try:
-                cart_id = get_cart_id(request)
-                cart = Cart.objects.get(cart_id=cart_id)
-            except Cart.DoesNotExist:
-                pass
+            # try:
+            #     cart_id = get_cart_id(request)
+            #     cart = Cart.objects.get(cart_id=cart_id)
+            # except Cart.DoesNotExist:
+            #     pass
             
-            cart_items = Cartitem.objects.filter(cart=cart)
-            for item in cart_items:
-                item.user = user
-                item.save()
+            # cart_items = Cartitem.objects.filter(cart=cart)
+            # for item in cart_items:
+            #     item.user = user
+            #     item.save()
             
             token, created = Token.objects.get_or_create(user=user)
             
