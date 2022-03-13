@@ -831,7 +831,7 @@
     "model": "store.product",
     "pk": "5f2f4b5e-57e4-4a09-9e5d-f74fbde6fccd",
     "fields": {
-        "product_name": "Leather Sleeve - Macbook 13’’",
+        "product_name": "Leather Sleeve - Macbook 13â€™â€™",
         "slug": "leather-sleeve-macbook-13",
         "category": 5,
         "image": "products/5.jpg",
@@ -851,7 +851,7 @@
         "slug": "hm-polo-shirt-slim-fit",
         "category": 1,
         "image": "products/1.jpg",
-        "description": "All of our products are made by independent suppliers, often in developing countries where our presence can make a real difference. Our business helps to create jobs and independence, particularly for women — consequently lifting people out of poverty and contributing to economic growth. We only work with partners who share our respect for people and the environment, and who are willing to work with us to improve their practices. All suppliers and factories must sign our strict Sustainability Commitment, which includes requirements for fair wages and good working conditions for all. We employ a dedicated sustainability staff in our worldwide production offices to make sure the commitment is followed.",
+        "description": "All of our products are made by independent suppliers, often in developing countries where our presence can make a real difference. Our business helps to create jobs and independence, particularly for women â€” consequently lifting people out of poverty and contributing to economic growth. We only work with partners who share our respect for people and the environment, and who are willing to work with us to improve their practices. All suppliers and factories must sign our strict Sustainability Commitment, which includes requirements for fair wages and good working conditions for all. We employ a dedicated sustainability staff in our worldwide production offices to make sure the commitment is followed.",
         "price": "12.00",
         "stock": 45,
         "created": "2021-12-13T11:00:09.759Z",
