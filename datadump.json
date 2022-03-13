@@ -1,0 +1,3261 @@
+[
+{
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "authtoken",
+        "model": "token"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "authtoken",
+        "model": "tokenproxy"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+        "app_label": "accounts",
+        "model": "account"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+        "app_label": "store",
+        "model": "category"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+        "app_label": "store",
+        "model": "product"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+        "app_label": "store",
+        "model": "variation"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+        "app_label": "store",
+        "model": "review"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+        "app_label": "carts",
+        "model": "itemvariation"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 14,
+    "fields": {
+        "app_label": "carts",
+        "model": "cartitem"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 15,
+    "fields": {
+        "app_label": "carts",
+        "model": "cart"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 16,
+    "fields": {
+        "app_label": "orders",
+        "model": "orderdetail"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 17,
+    "fields": {
+        "app_label": "orders",
+        "model": "payment"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 18,
+    "fields": {
+        "app_label": "orders",
+        "model": "orderproduct"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 19,
+    "fields": {
+        "app_label": "store",
+        "model": "productgallery"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "05kcmylcu2w7oc7qn7408plmcel6ui1f",
+    "fields": {
+        "session_data": "e30:1mxsCs:dy-Q9OlGWMgOANGHihLyZ9h36Eh1s_scg7zozIBwO08",
+        "expire_date": "2021-12-30T14:58:06.066Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "0wibgqpc5y5ucz0zuvh1dn8fho6p7nw4",
+    "fields": {
+        "session_data": "e30:1nM7tn:YDJqNjsXZFip4KbAqTXMl36QFJ8t94DoNzlEFYzk4Cc",
+        "expire_date": "2022-03-07T12:34:39.638Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "0ysxef3dg8w8tpicikk5lh7bs1fl55hp",
+    "fields": {
+        "session_data": "e30:1mxuBa:NFqo3j25cWSC7kspCdvVGxUmLwxsGoRrUANL72vJsog",
+        "expire_date": "2021-12-30T17:04:54.278Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "14hwqw3jpav3m6vpoi9q4zueik0rceno",
+    "fields": {
+        "session_data": "e30:1n1tgU:PSqpQWcmluui-PFQYxeHiMvGeqJdRk2wpyftfR79lnQ",
+        "expire_date": "2022-01-10T17:21:18.013Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "1agx0l7wtjzo8kozsoimvsv3td9tkvo1",
+    "fields": {
+        "session_data": "e30:1nM7tv:4KGfOD2x6wdd44yNiXYVGRoD9aQM-vlvYmglGr8eVFQ",
+        "expire_date": "2022-03-07T12:34:47.953Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "1tpawccy5wec22iv546aeo4af6eqg5sx",
+    "fields": {
+        "session_data": "e30:1mxrDt:NVZxQQldY-j5AyFx8svtf9xkiskRPvAKJDfC0pZzOLY",
+        "expire_date": "2021-12-30T13:55:05.569Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "2ls2exbupriti3m6lm4suvxb8x65178y",
+    "fields": {
+        "session_data": "e30:1n27ct:5k6pdy-iSKw3yNQxZdpHsvuQj934u4RtA9gLWhTmQ9Q",
+        "expire_date": "2022-01-11T08:14:31.943Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "2w11ml7igy4tzxw7flvhvpfwd6uyqtzg",
+    "fields": {
+        "session_data": "e30:1mzYNX:62QgfKY60kHVOjAuzi-XWaqQSwwdZXm9qdcsKdy6GsM",
+        "expire_date": "2022-01-04T06:12:03.541Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "32vnrsp03bz2da1myqclurhed03nn55q",
+    "fields": {
+        "session_data": "e30:1mxqTS:YHFBgZPsPnePV072XfGsMg_JSc9cf0VLy_2KNg_JmCo",
+        "expire_date": "2021-12-30T13:07:06.280Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "3rahzcdc153lgr4lt6rqf2nh5o444qqr",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQBe_imli2117HlPScIVqv14SPEimfCnF3AkoB3ZNm5j1VR-vSd-ssU3ct6qgKuMCCqSFLsfFit5VraFLgVoyJQUJUh98sE99l-LY3Gi6j5nFYpmvWH0XvdNbnscjjtLt_Bz3N_VaLBHAFCDJwNoYpFd8iWrTJCzKisJEcTSBPFQkoenA52do6Z6VG9XoDB6BBPw:1nLPqi:l9IuOyK0WN1O01GMBM4mVpLIcL52JafwbQvKgXLRON0",
+        "expire_date": "2022-03-05T13:32:32.851Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "4dosepuwcbkrcvruv3ckr8otpm2yy69l",
+    "fields": {
+        "session_data": "e30:1mzBgB:yJDqlBCUDeXT93cY3Fz3Qi9uRd-MNXoE-yeD-hc6DYE",
+        "expire_date": "2022-01-03T05:57:47.893Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "4r6pk90vhj1n3duoloebnyelczogqvbf",
+    "fields": {
+        "session_data": "e30:1n0MAa:4R6CIJI68VVODTEV9QWFdG1W5ZQh-3XuXkSRgCLWRCw",
+        "expire_date": "2022-01-06T11:22:00.284Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "4tafvc6p66sjb3s5mw21olxddbefkzrs",
+    "fields": {
+        "session_data": "e30:1mxsBP:wmhd8ujlWMrRt_JlGb9J0ZZh9txNnzivDrnlEu37bU0",
+        "expire_date": "2021-12-30T14:56:35.140Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "5nq8lvizhl65j1bw8ge9pxaqooz60qqj",
+    "fields": {
+        "session_data": "e30:1n0k63:HrT--WYaaAWvTDbL7acqB-LLu-yvrgPxCKUX6VoXpEM",
+        "expire_date": "2022-01-07T12:54:55.282Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "5rujha43uddc8rvchkqz0qjiimlpz1l4",
+    "fields": {
+        "session_data": "e30:1nM7tv:4KGfOD2x6wdd44yNiXYVGRoD9aQM-vlvYmglGr8eVFQ",
+        "expire_date": "2022-03-07T12:34:47.977Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "60jrzvy243dp6j54j9yo3fkyvx0w0v9f",
+    "fields": {
+        "session_data": "e30:1mxrqr:paS2kQ2rZqA_fFKxUpfiq2mIUd-nJdOq5ITZLw_7MrQ",
+        "expire_date": "2021-12-30T14:35:21.032Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "78jd8pt1h1s9usnhs68vcrx4b50brs7u",
+    "fields": {
+        "session_data": "e30:1nM868:jpjE8uy0x8GZQYxKsKR3jeMPsQADqIxTlRTgLw4Ab3M",
+        "expire_date": "2022-03-07T12:47:24.894Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "7utvqyv25kdh5cmucj9vymlahurgfamw",
+    "fields": {
+        "session_data": "e30:1nM862:41W7uhGjitmaYvz_1g1XCl2WhVglPfqUcdIGXRYFfNk",
+        "expire_date": "2022-03-07T12:47:18.851Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "7zxrpyddvkieiokoj38a76kix1tvtyrs",
+    "fields": {
+        "session_data": "e30:1mxs22:6gsEZo50_dqRfKKUTz2DMBRRojFtqmgO0_kzXC7kVMQ",
+        "expire_date": "2021-12-30T14:46:54.146Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "8mpn7t9n4e1rh9wtr0q7w1cp6ee4jvkj",
+    "fields": {
+        "session_data": "e30:1mzBgM:RjJ66Axu5GHKz-Kk-FZder3PfaZt9e-mA036DsvjrHU",
+        "expire_date": "2022-01-03T05:57:58.836Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "9jby49x31i39fweragauetfxwsbtz8bx",
+    "fields": {
+        "session_data": "e30:1nM875:SdMjNF5BW6xkWtgcqvLfVPknu-skywjDHimGol9qjSE",
+        "expire_date": "2022-03-07T12:48:23.428Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "ab4x5a83gc5s449opwvfej03y4keuq8n",
+    "fields": {
+        "session_data": "e30:1n0k8n:nG-CFuPyjvijzxe0ZPt2MmyhEsvi3zBROM6bTBhLag0",
+        "expire_date": "2022-01-07T12:57:45.553Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "aqsak3qe830fl59pm23cts75pdvc1k2q",
+    "fields": {
+        "session_data": "e30:1n5V7o:CsF7bmyN6phicCMOKATm9_L1w17y28fqPqLKsUzN15Q",
+        "expire_date": "2022-01-20T15:56:24.654Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "bh71qi74zum8xo1dvhrva9l0dfpccn7c",
+    "fields": {
+        "session_data": "e30:1n0k8n:nG-CFuPyjvijzxe0ZPt2MmyhEsvi3zBROM6bTBhLag0",
+        "expire_date": "2022-01-07T12:57:45.430Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "d2pf7o73fubn9uzgsrhrnb4twsdtwm96",
+    "fields": {
+        "session_data": "e30:1n0NOZ:f7ZAX2Tvu-l2-kLOGGlBBdhvAHz7oladrWoLnb8vKKI",
+        "expire_date": "2022-01-06T12:40:31.020Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "dx7ob0b7w6cu2d4y5dynsc0ggqi6pwry",
+    "fields": {
+        "session_data": "e30:1mxoNa:emyDvq9X7XvjlomEZM9QEwnRJ6JJu5xnEsXE40Nzb6U",
+        "expire_date": "2021-12-30T10:52:54.567Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "eiceennmijotyhtt3dri1l4od7gj7g1o",
+    "fields": {
+        "session_data": "e30:1nM7ue:gpRykPBOenMoqEtm4nXA3ixKj_M9HtXdTGc0Jz49S_U",
+        "expire_date": "2022-03-07T12:35:32.047Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "fdj1lzocphk2mmf6znp6gw4uwrozppny",
+    "fields": {
+        "session_data": "e30:1mxOyw:ScSEnPYZWVlBQitJmYnorEatbSvfh7Up8xcJtiNiHvA",
+        "expire_date": "2021-12-29T07:45:46.556Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "ghvo1lv70620iwtxpslmtgp93iw3lyul",
+    "fields": {
+        "session_data": "e30:1nM862:41W7uhGjitmaYvz_1g1XCl2WhVglPfqUcdIGXRYFfNk",
+        "expire_date": "2022-03-07T12:47:18.944Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "hh5329ztkpn32etw6jehkd35bstsgl5e",
+    "fields": {
+        "session_data": "e30:1n5V7F:HlAFHb5jVCpHtU9i3fmneOMREu2IAkSB21TJ7-60q_o",
+        "expire_date": "2022-01-20T15:55:49.186Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "imf5bkk9hvu49lzmem8lrwlz9lvkr5r7",
+    "fields": {
+        "session_data": "e30:1mwhPK:pyANOLK3BibFFp7ZY5P973rcmhVUrrjkB0j1OcfQaII",
+        "expire_date": "2021-12-27T09:14:06.152Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "jrkb0b3n1o3mmbae6292ce09m1gektv7",
+    "fields": {
+        "session_data": "eyJ1c2VyX2lkIjoiZDMyNWNlNjktYTFhNy00ZTE5LWFiZjUtOTVjOGUwMDc1ZTU3In0:1n27QM:feE2Kq47r4rsNsu7DqJaM0aQcDxtQOyLzbUrsU2X3vc",
+        "expire_date": "2022-01-11T08:01:34.550Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "k9pl22hhamn43yx6ky7svyn5c99hdrp8",
+    "fields": {
+        "session_data": ".eJxVjUsOgzAMRO-SdRM5xE6gy-57BuQ4pvQjkPisqt69ILFodyPNezNv0_K69O0669TeizmbpEIVBbKpErKIVbQMmqwGKblBqjMmc_rVMstTh90tDx5uo5NxWKZ7djvijnZ217Ho63KwfwM9z_1mI_L2wQkVOBCHDJBKxxJjp500BBCgFMU6CHvP7CltAUKMHqSpo_l8Ac6_QPI:1nMEOE:qbgitHe6m-hIEdqmF5oaItliTQGDne_a-AgOpesKxZU",
+        "expire_date": "2022-03-07T19:30:30.010Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "km1hx1bfxe60s9uy0numbaj5z0sdskuv",
+    "fields": {
+        "session_data": "e30:1mxsr7:YsdTdKFopYOmBg3yjl3SCCnAYZtj9KUUFPJzsEoAK8E",
+        "expire_date": "2021-12-30T15:39:41.966Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "l1tqrzinm94xpcq2m3jkjorbe66vib9h",
+    "fields": {
+        "session_data": "e30:1n0k63:HrT--WYaaAWvTDbL7acqB-LLu-yvrgPxCKUX6VoXpEM",
+        "expire_date": "2022-01-07T12:54:55.136Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "ljcrslccuk2kuo95y2cluhtenradho08",
+    "fields": {
+        "session_data": "e30:1nM7sX:fsQWBMRgkqU_OpdytU-W0FoVRlxfj4l1tA4bBb5uXbQ",
+        "expire_date": "2022-03-07T12:33:21.507Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "m5194gvg9oi95bigvz09di8huuf9ax46",
+    "fields": {
+        "session_data": "e30:1n1YPv:2biIBosuimrEPkDMQ84Pn5XPwIA1X93lg4Mr865yrT4",
+        "expire_date": "2022-01-09T18:38:47.125Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "mh0wq43wcgsq8t42yy5og2mcjsuqj2z4",
+    "fields": {
+        "session_data": "e30:1n27c8:62GhBM0GY1qq_wO-JVE5DDYNAj-S4zf--pp3DBtlg6g",
+        "expire_date": "2022-01-11T08:13:44.911Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "mlvvj9gt68zw0uy3gzwvrk0vptdq5elt",
+    "fields": {
+        "session_data": "e30:1mxuTk:OGrmbsdHu1_t0vfChzjLB2X-F5zpePcdhEGHUrfoUzA",
+        "expire_date": "2021-12-30T17:23:40.264Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "mnbadtdqdabwow5sed0s3f1effpj51u8",
+    "fields": {
+        "session_data": "e30:1nM8GK:QvN9DEdgDcQCQq5ixQGgwNjMAldkYaruaoMmXXWGKjo",
+        "expire_date": "2022-03-07T12:57:56.095Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "ngv3a180e2x5gzda4vury5iaukzevxmz",
+    "fields": {
+        "session_data": "e30:1nM8Bv:J99nFE1tTttG4t3y7iNV5HG5qWKgRowB2pvuMw9DKfc",
+        "expire_date": "2022-03-07T12:53:23.384Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "npg4l6bk268d2j7402q2etwb2mmtjtlx",
+    "fields": {
+        "session_data": "e30:1mxqrC:D3fUVDON2VsLOlv1G-4r84DB1L56Pmf88r2Re7Cnc-k",
+        "expire_date": "2021-12-30T13:31:38.398Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "ocnlojnyjrobqiye9pxozedh1f84atfm",
+    "fields": {
+        "session_data": "e30:1nM8E8:B2kLJvFL81kLohR0USXKFe0bq2npOILxZW-_KMQ_vuw",
+        "expire_date": "2022-03-07T12:55:40.788Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "pipfsh5aeolj7hqy3outmi614684iogh",
+    "fields": {
+        "session_data": "e30:1nM87Q:59PS0PpKt6_uCq5SBbieBsp5pTSkVI8DRbLdaCZ6I8k",
+        "expire_date": "2022-03-07T12:48:44.119Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "pltwi7anhs5mwbaee8r6zci2lfvzha17",
+    "fields": {
+        "session_data": "e30:1mxqUV:_86pklsBOtmRCVpe2MN8gu2FjqYy_XXW2RB_6gzgeeg",
+        "expire_date": "2021-12-30T13:08:11.960Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "pma9kiovx20yoen3pr9jl4irksaxhgdy",
+    "fields": {
+        "session_data": "e30:1n1Vil:8Y9T_QER5FfPoDsVGmy-CIfE9fUrhmhJ29b4BL102xo",
+        "expire_date": "2022-01-09T15:46:03.166Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "pp7druhnsk7b7i156u63kny7pvp8eou1",
+    "fields": {
+        "session_data": "e30:1mxo90:R0LGup535JV9nlhWFrieNvPccihQEszGjZIvmejV1pQ",
+        "expire_date": "2021-12-30T10:37:50.073Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "t4qxtr4domiipmkgoo6bcd5quv3a68cd",
+    "fields": {
+        "session_data": "e30:1mzBfH:zBgSA21LFGPhPrnvbCiCJcah2NoNwhPh1ErYHL-9hD4",
+        "expire_date": "2022-01-03T05:56:51.250Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "tfdh8j5qly39blygfr47evpki6wfmtnh",
+    "fields": {
+        "session_data": "e30:1mxtGW:fL0NL_0gA1jFOj4KZdBEgzhz2WvtPitfRro3RU6Gtyg",
+        "expire_date": "2021-12-30T16:05:56.153Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "tp5meaushzgdh7w79auavk54j682iw05",
+    "fields": {
+        "session_data": "e30:1n1Wi3:v3iiuFFgx7kn7uVmO0BeWwFCKfNQQUU4ZW3znQF6aj8",
+        "expire_date": "2022-01-09T16:49:23.985Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "v0619kvoi6756lg4ch47ie40durx7ir1",
+    "fields": {
+        "session_data": ".eJyVjzsOwjAQRO_imlhrZ9d2KOk5Q7S214SPEimfCnF3EpQCSrqRZt5o5qlaXuauXSYZ22tWR5VrS0lcU7FhX6GYVcVCVUMpCIAnIa8O31jkdJf-w964vww6Df08XqPeInp3J30esjxOe_anoOOpW2khMQFrCoLAtrZgS3LGMfrgMCJjZMzkrYNUgskpSmGgQjY404Bsq_688XoDnNdODQ:1n1wIP:lwu0XjEqe1_oETJJDRYHUc6cBUFmjkq3AHVyzybC37s",
+        "expire_date": "2022-01-10T20:08:37.905Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "wjspkcmoqbzhfmfjl1lv2z9mzaoub7me",
+    "fields": {
+        "session_data": "e30:1mxt9e:PzGCCnDZWcIJxqI6TNiU1ktYUzfjtIklGQnOVkFhWuo",
+        "expire_date": "2021-12-30T15:58:50.708Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "xaocuro87ndqe54id85jlflz8jkpiioa",
+    "fields": {
+        "session_data": "e30:1nM887:xjL3VZVhKgieV7NRbK7hEAHW99HO6vALj__v25dqm8c",
+        "expire_date": "2022-03-07T12:49:27.487Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "xl8eigicesrdeljj8xyud6oh6a97i9zh",
+    "fields": {
+        "session_data": "e30:1mxs1a:2sG1YbGSdnPGOw2Gv4Gn37da33rSWWjQ1SA3x-xwgEI",
+        "expire_date": "2021-12-30T14:46:26.875Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "y8pqc2geabpegm17xgt73bzob9f56eyu",
+    "fields": {
+        "session_data": "e30:1mxsMX:Sk1wAH1Krz1lJp2XXiDoCeigJDD-AIRMH_yxe9YalIM",
+        "expire_date": "2021-12-30T15:08:05.314Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "yl8mzmztuf1ay4z18gnrvvu1t6fbgk0l",
+    "fields": {
+        "session_data": ".eJxVjUsOgzAMRO-SdRM5xE6gy-57BuQ4pvQjkPisqt69ILFodyPNezNv0_K69O0669TeizmbpEIVBbKpErKIVbQMmqwGKblBqjMmc_rVMstTh90tDx5uo5NxWKZ7djvijnZ217Ho63KwfwM9z_1mI_L2wQkVOBCHDJBKxxJjp500BBCgFMU6CHvP7CltAUKMHqSpo_l8Ac6_QPI:1nM7XU:3pIGxzvcf1x-zMBfVI5Rc5V82BNyDmcKI5g3ih2YMs0",
+        "expire_date": "2022-03-07T12:11:36.822Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "zljdavn3ue2gq5du8tf0v4t3e68ro7ey",
+    "fields": {
+        "session_data": ".eJxVjUsOgzAMRO-SdRM5xE6gy-57BuQ4pvQjkPisqt69ILFodyPNezNv0_K69O0669TeizmbpEIVBbKpErKIVbQMmqwGKblBqjMmc_rVMstTh90tDx5uo5NxWKZ7djvijnZ217Ho63KwfwM9z_1mI_L2wQkVOBCHDJBKxxJjp500BBCgFMU6CHvP7CltAUKMHqSpo_l8Ac6_QPI:1nTKF6:8pJrfUBWs05p5EJNa4SB6wsCAzZLBfPfYlVgKINNgJw",
+        "expire_date": "2022-03-27T09:10:24.778Z"
+    }
+},
+{
+    "model": "accounts.account",
+    "pk": "52eb7de5-5193-4e71-8a42-40d08517535c",
+    "fields": {
+        "password": "pbkdf2_sha256$320000$8Agrmc28v3E1TbAr34AQWN$OCa6kA5RZ4d+HfvJgq6lZ/mAZVEHre4k0sWQf96PIwY=",
+        "username": "maya",
+        "email": "maya@company.com",
+        "date_joined": "2021-12-15T07:46:20.589Z",
+        "last_login": "2021-12-15T07:46:20.188Z",
+        "is_active": true,
+        "is_staff": false,
+        "is_admin": false,
+        "is_superuser": false
+    }
+},
+{
+    "model": "accounts.account",
+    "pk": "7ec52535-72c5-4426-a0e7-e3cdb9458b47",
+    "fields": {
+        "password": "pbkdf2_sha256$320000$2nojVl3hVKlASxPjAqiOPL$HliFH1XN/nVg/UVpZCZiddUR3wffuf1WK0WEuOSsKkI=",
+        "username": "nzejoe",
+        "email": "nzejoeworld@gmail.com",
+        "date_joined": "2022-02-21T12:10:34.691Z",
+        "last_login": "2022-03-13T09:10:24.511Z",
+        "is_active": true,
+        "is_staff": true,
+        "is_admin": true,
+        "is_superuser": true
+    }
+},
+{
+    "model": "store.category",
+    "pk": 1,
+    "fields": {
+        "name": "T-shirt",
+        "image": "",
+        "description": null,
+        "created": "2021-12-13T10:56:26.762Z"
+    }
+},
+{
+    "model": "store.category",
+    "pk": 2,
+    "fields": {
+        "name": "Cameras",
+        "image": "",
+        "description": null,
+        "created": "2021-12-13T11:00:40.260Z"
+    }
+},
+{
+    "model": "store.category",
+    "pk": 3,
+    "fields": {
+        "name": "Gadgets",
+        "image": "",
+        "description": null,
+        "created": "2021-12-13T11:00:52.768Z"
+    }
+},
+{
+    "model": "store.category",
+    "pk": 4,
+    "fields": {
+        "name": "Phones",
+        "image": "",
+        "description": null,
+        "created": "2021-12-13T11:01:12.787Z"
+    }
+},
+{
+    "model": "store.category",
+    "pk": 5,
+    "fields": {
+        "name": "Laptops",
+        "image": "",
+        "description": null,
+        "created": "2021-12-13T11:01:22.010Z"
+    }
+},
+{
+    "model": "store.category",
+    "pk": 6,
+    "fields": {
+        "name": "Shoes",
+        "image": "products/category/nike-shoes.jpg",
+        "description": null,
+        "created": "2021-12-13T11:37:16.437Z"
+    }
+},
+{
+    "model": "store.category",
+    "pk": 7,
+    "fields": {
+        "name": "Headphones",
+        "image": "products/category/wearin_sony_headphone.jpg",
+        "description": null,
+        "created": "2021-12-13T11:40:00.463Z"
+    }
+},
+{
+    "model": "store.category",
+    "pk": 8,
+    "fields": {
+        "name": "Furnitures",
+        "image": "",
+        "description": null,
+        "created": "2021-12-13T11:47:02.500Z"
+    }
+},
+{
+    "model": "store.category",
+    "pk": 9,
+    "fields": {
+        "name": "Watches",
+        "image": "products/category/wearin_wristwatch.jpg",
+        "description": null,
+        "created": "2021-12-13T11:49:24.064Z"
+    }
+},
+{
+    "model": "store.category",
+    "pk": 10,
+    "fields": {
+        "name": "Jackets",
+        "image": "products/category/wearing_jacket.jpg",
+        "description": null,
+        "created": "2021-12-13T11:54:14.668Z"
+    }
+},
+{
+    "model": "store.category",
+    "pk": 11,
+    "fields": {
+        "name": "Clothing",
+        "image": "",
+        "description": null,
+        "created": "2021-12-13T15:40:43.245Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": "1d586d5b-8357-44c7-84a9-44995c2e304e",
+    "fields": {
+        "product_name": "Apple Homkit - Ecobee3 Lite Smart Thermostat",
+        "slug": "apple-homkit-ecobee3-lite-smart-thermostat",
+        "category": 3,
+        "image": "products/10.jpg",
+        "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.",
+        "price": "670.00",
+        "stock": 34,
+        "created": "2021-12-13T11:04:52.142Z",
+        "updated": "2021-12-13T14:34:04.672Z",
+        "active": true
+    }
+},
+{
+    "model": "store.product",
+    "pk": "2c3eb3c8-8201-4244-b1f4-d5c8406f13fe",
+    "fields": {
+        "product_name": "Anker Soundcore Flare 2 Bluetooth Speaker With Ipx",
+        "slug": "anker-soundcore-flare-2-bluetooth-speaker-with-ipx",
+        "category": 3,
+        "image": "products/154242_1597042228.jpg",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        "price": "100.00",
+        "stock": 273,
+        "created": "2021-12-13T11:31:22.227Z",
+        "updated": "2021-12-13T14:34:05.012Z",
+        "active": true
+    }
+},
+{
+    "model": "store.product",
+    "pk": "2e8f0b90-adb3-4cff-990b-4b87dc2aadb1",
+    "fields": {
+        "product_name": "Apple Watch Series 4",
+        "slug": "apple-watch-series-4",
+        "category": 9,
+        "image": "products/7.jpg",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        "price": "798.87",
+        "stock": 45,
+        "created": "2021-12-13T11:49:55.254Z",
+        "updated": "2021-12-13T14:34:05.129Z",
+        "active": true
+    }
+},
+{
+    "model": "store.product",
+    "pk": "518719fb-eba3-42c2-94af-c9d562eefe3b",
+    "fields": {
+        "product_name": "Sony Xperia PRO I 5G Dual-SIM",
+        "slug": "sony-xperia-pro-i-5g-dual-sim",
+        "category": 4,
+        "image": "products/Sony_Xperia_PRO_I_5G_Dual-SIM.jpg",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        "price": "1020.95",
+        "stock": 154,
+        "created": "2021-12-13T11:59:16.853Z",
+        "updated": "2021-12-13T14:34:05.216Z",
+        "active": true
+    }
+},
+{
+    "model": "store.product",
+    "pk": "52e0883e-0632-44ee-ba12-97d1355a52e2",
+    "fields": {
+        "product_name": "Logitec gaming headphone",
+        "slug": "logitec-gaming-headphone",
+        "category": 7,
+        "image": "products/9.jpg",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        "price": "365.98",
+        "stock": 57,
+        "created": "2021-12-13T11:40:34.360Z",
+        "updated": "2021-12-13T14:34:05.063Z",
+        "active": true
+    }
+},
+{
+    "model": "store.product",
+    "pk": "5f2f4b5e-57e4-4a09-9e5d-f74fbde6fccd",
+    "fields": {
+        "product_name": "Leather Sleeve - Macbook 13’’",
+        "slug": "leather-sleeve-macbook-13",
+        "category": 5,
+        "image": "products/5.jpg",
+        "description": "here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+        "price": "244.99",
+        "stock": 35,
+        "created": "2021-12-13T11:06:40.542Z",
+        "updated": "2021-12-13T14:34:05.157Z",
+        "active": true
+    }
+},
+{
+    "model": "store.product",
+    "pk": "64f471ed-f030-43ba-9075-312716bb6766",
+    "fields": {
+        "product_name": "H&M Polo Shirt Slim Fit",
+        "slug": "hm-polo-shirt-slim-fit",
+        "category": 1,
+        "image": "products/1.jpg",
+        "description": "All of our products are made by independent suppliers, often in developing countries where our presence can make a real difference. Our business helps to create jobs and independence, particularly for women — consequently lifting people out of poverty and contributing to economic growth. We only work with partners who share our respect for people and the environment, and who are willing to work with us to improve their practices. All suppliers and factories must sign our strict Sustainability Commitment, which includes requirements for fair wages and good working conditions for all. We employ a dedicated sustainability staff in our worldwide production offices to make sure the commitment is followed.",
+        "price": "12.00",
+        "stock": 45,
+        "created": "2021-12-13T11:00:09.759Z",
+        "updated": "2021-12-13T15:56:38.623Z",
+        "active": true
+    }
+},
+{
+    "model": "store.product",
+    "pk": "8a677cdc-6bad-487b-abe5-c4a119832083",
+    "fields": {
+        "product_name": "Xiaomi HXM-R9-64-GRN-EU Redmi 9 Dual Sim",
+        "slug": "xiaomi-hxm-r9-64-grn-eu-redmi-9-dual-sim",
+        "category": 4,
+        "image": "products/6147ZT4PeFL.jpg",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        "price": "569.99",
+        "stock": 58,
+        "created": "2021-12-13T11:26:04.826Z",
+        "updated": "2021-12-13T14:34:04.993Z",
+        "active": true
+    }
+},
+{
+    "model": "store.product",
+    "pk": "8eefd533-e4f6-492b-8dad-028f10f58dda",
+    "fields": {
+        "product_name": "GoPro HERO7 Camera",
+        "slug": "gopro-hero7-camera",
+        "category": 2,
+        "image": "products/11.jpg",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        "price": "556.97",
+        "stock": 758,
+        "created": "2021-12-13T11:42:27.431Z",
+        "updated": "2021-12-13T14:34:05.085Z",
+        "active": true
+    }
+},
+{
+    "model": "store.product",
+    "pk": "97ccf083-c658-4557-9e92-e1d2f7626b5a",
+    "fields": {
+        "product_name": "Winter Boots Leather for Men",
+        "slug": "winter-boots-leather-for-men",
+        "category": 6,
+        "image": "products/12.jpg",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        "price": "35.99",
+        "stock": 143,
+        "created": "2021-12-13T11:38:13.005Z",
+        "updated": "2021-12-13T14:34:05.048Z",
+        "active": true
+    }
+},
+{
+    "model": "store.product",
+    "pk": "a3dda727-0495-4f0f-b545-209831fcefd4",
+    "fields": {
+        "product_name": "Apple air pods 2",
+        "slug": "apple-air-pods-2",
+        "category": 7,
+        "image": "products/8.jpg",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        "price": "567.99",
+        "stock": 102,
+        "created": "2021-12-13T11:51:15.893Z",
+        "updated": "2021-12-13T14:34:05.133Z",
+        "active": true
+    }
+},
+{
+    "model": "store.product",
+    "pk": "ad9a5250-3cfb-4e29-8e61-b56c770ef393",
+    "fields": {
+        "product_name": "Sony HT-CT390 Ultra Slim Bluet",
+        "slug": "sony-ht-ct390-ultra-slim-bluet",
+        "category": 3,
+        "image": "products/Sony-Soundbar-HTCT390-1-1.jpg",
+        "description": "here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+        "price": "580.99",
+        "stock": 56,
+        "created": "2021-12-13T11:18:15.781Z",
+        "updated": "2021-12-13T14:34:04.747Z",
+        "active": true
+    }
+},
+{
+    "model": "store.product",
+    "pk": "e3ff93f2-5a77-4eb0-9b93-e20c9376a301",
+    "fields": {
+        "product_name": "IKEA arm chair",
+        "slug": "ikea-arm-chair",
+        "category": 8,
+        "image": "products/6.jpg",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        "price": "158.99",
+        "stock": 34,
+        "created": "2021-12-13T11:47:40.818Z",
+        "updated": "2021-12-13T14:34:05.110Z",
+        "active": true
+    }
+},
+{
+    "model": "store.product",
+    "pk": "ecb4a9f5-15a1-48e6-a3b9-37fed7fb4a6b",
+    "fields": {
+        "product_name": "Faux Fur Hooded Jacket Men",
+        "slug": "faux-fur-hooded-jacket-men",
+        "category": 10,
+        "image": "products/2.jpg",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        "price": "58.98",
+        "stock": 334,
+        "created": "2021-12-13T11:54:55.388Z",
+        "updated": "2021-12-13T14:34:05.139Z",
+        "active": true
+    }
+},
+{
+    "model": "store.product",
+    "pk": "fe800441-a693-4fa1-a388-f88bbe847e74",
+    "fields": {
+        "product_name": "Bermuda Shorts",
+        "slug": null,
+        "category": 11,
+        "image": "products/3.jpg",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        "price": "34.99",
+        "stock": 465,
+        "created": "2021-12-13T15:44:23.931Z",
+        "updated": "2021-12-13T15:44:23.931Z",
+        "active": true
+    }
+},
+{
+    "model": "store.productgallery",
+    "pk": 7,
+    "fields": {
+        "product": "64f471ed-f030-43ba-9075-312716bb6766",
+        "image": "products/gallery/polo-1.jpg"
+    }
+},
+{
+    "model": "store.productgallery",
+    "pk": 8,
+    "fields": {
+        "product": "64f471ed-f030-43ba-9075-312716bb6766",
+        "image": "products/gallery/polo-2.jpg"
+    }
+},
+{
+    "model": "store.productgallery",
+    "pk": 9,
+    "fields": {
+        "product": "64f471ed-f030-43ba-9075-312716bb6766",
+        "image": "products/gallery/polo-3.jpg"
+    }
+},
+{
+    "model": "store.productgallery",
+    "pk": 10,
+    "fields": {
+        "product": "64f471ed-f030-43ba-9075-312716bb6766",
+        "image": "products/gallery/1.jpg"
+    }
+},
+{
+    "model": "store.variation",
+    "pk": 1,
+    "fields": {
+        "product": "64f471ed-f030-43ba-9075-312716bb6766",
+        "variation_category": "color",
+        "variation_value": "Green",
+        "created": "2021-12-13T12:00:57.412Z"
+    }
+},
+{
+    "model": "store.variation",
+    "pk": 2,
+    "fields": {
+        "product": "64f471ed-f030-43ba-9075-312716bb6766",
+        "variation_category": "color",
+        "variation_value": "Red",
+        "created": "2021-12-13T12:01:06.042Z"
+    }
+},
+{
+    "model": "store.variation",
+    "pk": 3,
+    "fields": {
+        "product": "64f471ed-f030-43ba-9075-312716bb6766",
+        "variation_category": "color",
+        "variation_value": "White",
+        "created": "2021-12-13T12:01:15.479Z"
+    }
+},
+{
+    "model": "store.variation",
+    "pk": 4,
+    "fields": {
+        "product": "64f471ed-f030-43ba-9075-312716bb6766",
+        "variation_category": "size",
+        "variation_value": "large",
+        "created": "2021-12-13T12:01:38.573Z"
+    }
+},
+{
+    "model": "store.variation",
+    "pk": 5,
+    "fields": {
+        "product": "64f471ed-f030-43ba-9075-312716bb6766",
+        "variation_category": "size",
+        "variation_value": "medium",
+        "created": "2021-12-13T12:01:46.708Z"
+    }
+},
+{
+    "model": "store.variation",
+    "pk": 6,
+    "fields": {
+        "product": "64f471ed-f030-43ba-9075-312716bb6766",
+        "variation_category": "size",
+        "variation_value": "small",
+        "created": "2021-12-13T12:01:58.626Z"
+    }
+},
+{
+    "model": "store.variation",
+    "pk": 7,
+    "fields": {
+        "product": "1d586d5b-8357-44c7-84a9-44995c2e304e",
+        "variation_category": "brand",
+        "variation_value": "Apple",
+        "created": "2021-12-13T12:02:10.562Z"
+    }
+},
+{
+    "model": "store.variation",
+    "pk": 8,
+    "fields": {
+        "product": "ad9a5250-3cfb-4e29-8e61-b56c770ef393",
+        "variation_category": "brand",
+        "variation_value": "Sony",
+        "created": "2021-12-13T12:02:22.006Z"
+    }
+},
+{
+    "model": "store.variation",
+    "pk": 9,
+    "fields": {
+        "product": "2e8f0b90-adb3-4cff-990b-4b87dc2aadb1",
+        "variation_category": "brand",
+        "variation_value": "Apple",
+        "created": "2021-12-13T12:03:32.456Z"
+    }
+},
+{
+    "model": "store.variation",
+    "pk": 10,
+    "fields": {
+        "product": "a3dda727-0495-4f0f-b545-209831fcefd4",
+        "variation_category": "brand",
+        "variation_value": "Apple",
+        "created": "2021-12-13T12:03:44.313Z"
+    }
+},
+{
+    "model": "store.variation",
+    "pk": 11,
+    "fields": {
+        "product": "5f2f4b5e-57e4-4a09-9e5d-f74fbde6fccd",
+        "variation_category": "brand",
+        "variation_value": "Apple",
+        "created": "2021-12-13T12:03:57.139Z"
+    }
+},
+{
+    "model": "store.variation",
+    "pk": 12,
+    "fields": {
+        "product": "8a677cdc-6bad-487b-abe5-c4a119832083",
+        "variation_category": "brand",
+        "variation_value": "Xioami",
+        "created": "2021-12-13T12:04:12.014Z"
+    }
+},
+{
+    "model": "store.variation",
+    "pk": 13,
+    "fields": {
+        "product": "2c3eb3c8-8201-4244-b1f4-d5c8406f13fe",
+        "variation_category": "brand",
+        "variation_value": "Anker",
+        "created": "2021-12-13T12:04:22.189Z"
+    }
+},
+{
+    "model": "store.variation",
+    "pk": 14,
+    "fields": {
+        "product": "52e0883e-0632-44ee-ba12-97d1355a52e2",
+        "variation_category": "brand",
+        "variation_value": "Logitech",
+        "created": "2021-12-13T12:04:39.400Z"
+    }
+},
+{
+    "model": "store.variation",
+    "pk": 15,
+    "fields": {
+        "product": "518719fb-eba3-42c2-94af-c9d562eefe3b",
+        "variation_category": "brand",
+        "variation_value": "Sony",
+        "created": "2021-12-13T12:05:41.228Z"
+    }
+},
+{
+    "model": "carts.itemvariation",
+    "pk": 30,
+    "fields": {
+        "variation_id": "1d586d5b-8357-44c7-84a9-44995c2e304eNoneNoneApple",
+        "color": null,
+        "size": null,
+        "brand": "Apple"
+    }
+},
+{
+    "model": "carts.itemvariation",
+    "pk": 31,
+    "fields": {
+        "variation_id": "8a677cdc-6bad-487b-abe5-c4a119832083NoneNoneXioami",
+        "color": null,
+        "size": null,
+        "brand": "Xioami"
+    }
+},
+{
+    "model": "carts.itemvariation",
+    "pk": 32,
+    "fields": {
+        "variation_id": "ad9a5250-3cfb-4e29-8e61-b56c770ef393NoneNoneSony",
+        "color": null,
+        "size": null,
+        "brand": "Sony"
+    }
+},
+{
+    "model": "carts.itemvariation",
+    "pk": 33,
+    "fields": {
+        "variation_id": "ad9a5250-3cfb-4e29-8e61-b56c770ef393NoneNoneSony",
+        "color": null,
+        "size": null,
+        "brand": "Sony"
+    }
+},
+{
+    "model": "carts.itemvariation",
+    "pk": 34,
+    "fields": {
+        "variation_id": "ad9a5250-3cfb-4e29-8e61-b56c770ef393NoneNoneSony",
+        "color": null,
+        "size": null,
+        "brand": "Sony"
+    }
+},
+{
+    "model": "carts.itemvariation",
+    "pk": 35,
+    "fields": {
+        "variation_id": "2c3eb3c8-8201-4244-b1f4-d5c8406f13feNoneNoneAnker",
+        "color": null,
+        "size": null,
+        "brand": "Anker"
+    }
+},
+{
+    "model": "carts.cartitem",
+    "pk": 30,
+    "fields": {
+        "user": [
+            "nzejoeworld@gmail.com"
+        ],
+        "product": "1d586d5b-8357-44c7-84a9-44995c2e304e",
+        "variation": 30,
+        "quantity": 2,
+        "created": "2022-02-21T19:56:56.368Z",
+        "updated": "2022-02-21T20:10:47.219Z",
+        "is_active": true
+    }
+},
+{
+    "model": "orders.payment",
+    "pk": 1,
+    "fields": {
+        "payment_id": "08K53965KV1126948",
+        "user": null,
+        "amount": "12.24",
+        "payment_method": "PayPal",
+        "status": "COMPLETED",
+        "created": "2021-12-13T12:08:17.172Z"
+    }
+},
+{
+    "model": "orders.payment",
+    "pk": 2,
+    "fields": {
+        "payment_id": "56106898EB0194449",
+        "user": null,
+        "amount": "2431.62",
+        "payment_method": "PayPal",
+        "status": "COMPLETED",
+        "created": "2021-12-14T07:12:44.443Z"
+    }
+},
+{
+    "model": "orders.payment",
+    "pk": 3,
+    "fields": {
+        "payment_id": "1DB59239P42133549",
+        "user": null,
+        "amount": "12.24",
+        "payment_method": "PayPal",
+        "status": "COMPLETED",
+        "created": "2021-12-14T11:19:05.684Z"
+    }
+},
+{
+    "model": "orders.payment",
+    "pk": 4,
+    "fields": {
+        "payment_id": "95413696KG5389102",
+        "user": [
+            "maya@company.com"
+        ],
+        "amount": "306.00",
+        "payment_method": "PayPal",
+        "status": "COMPLETED",
+        "created": "2021-12-15T07:47:41.227Z"
+    }
+},
+{
+    "model": "orders.orderdetail",
+    "pk": 1,
+    "fields": {
+        "order_number": "2021121308K53965KV1126948",
+        "payment": 1,
+        "user": null,
+        "first_name": "Jonathan",
+        "middle_name": "",
+        "last_name": "Nzete",
+        "gender": "male",
+        "email": "nzejoeworld@gmail.com",
+        "phone": "08064547029",
+        "address_1": "5 Okeanonife Street",
+        "address_2": "",
+        "city": "Lagos",
+        "state": "LA",
+        "country": "Nigeria",
+        "tax": "0.24",
+        "total_amount": "12.00",
+        "grand_total": "12.24",
+        "is_ordered": true,
+        "created": "2021-12-13T12:08:17.224Z",
+        "updated": "2021-12-13T12:08:17.224Z"
+    }
+},
+{
+    "model": "orders.orderdetail",
+    "pk": 2,
+    "fields": {
+        "order_number": "2021121456106898EB0194449",
+        "payment": 2,
+        "user": null,
+        "first_name": "Jonathan",
+        "middle_name": "",
+        "last_name": "Nzete",
+        "gender": "male",
+        "email": "nzejoeworld@gmail.com",
+        "phone": "08064547029",
+        "address_1": "5 Okeanonife Street",
+        "address_2": "",
+        "city": "Lagos",
+        "state": "LA",
+        "country": "Nigeria",
+        "tax": "47.68",
+        "total_amount": "2383.94",
+        "grand_total": "2431.62",
+        "is_ordered": true,
+        "created": "2021-12-14T07:12:44.468Z",
+        "updated": "2021-12-14T07:12:44.468Z"
+    }
+},
+{
+    "model": "orders.orderdetail",
+    "pk": 3,
+    "fields": {
+        "order_number": "202112141DB59239P42133549",
+        "payment": 3,
+        "user": null,
+        "first_name": "Jonathan",
+        "middle_name": "",
+        "last_name": "Nzete",
+        "gender": "male",
+        "email": "nzejoeworld@gmail.com",
+        "phone": "08064547029",
+        "address_1": "5 Okeanonife Street",
+        "address_2": "",
+        "city": "Lagos",
+        "state": "LA",
+        "country": "Nigeria",
+        "tax": "0.24",
+        "total_amount": "12.00",
+        "grand_total": "12.24",
+        "is_ordered": true,
+        "created": "2021-12-14T11:19:05.738Z",
+        "updated": "2021-12-14T11:19:05.738Z"
+    }
+},
+{
+    "model": "orders.orderdetail",
+    "pk": 4,
+    "fields": {
+        "order_number": "2021121595413696KG5389102",
+        "payment": 4,
+        "user": [
+            "maya@company.com"
+        ],
+        "first_name": "Jonathan",
+        "middle_name": "",
+        "last_name": "Nzete",
+        "gender": "male",
+        "email": "nzejoeworld@gmail.com",
+        "phone": "08064547029",
+        "address_1": "5 Okeanonife Street",
+        "address_2": "",
+        "city": "Lagos",
+        "state": "LA",
+        "country": "Nigeria",
+        "tax": "6.00",
+        "total_amount": "300.00",
+        "grand_total": "306.00",
+        "is_ordered": true,
+        "created": "2021-12-15T07:47:41.339Z",
+        "updated": "2021-12-15T07:47:41.339Z"
+    }
+},
+{
+    "model": "orders.orderproduct",
+    "pk": 1,
+    "fields": {
+        "order": 1,
+        "product": "64f471ed-f030-43ba-9075-312716bb6766",
+        "product_name": "H&M Polo Shirt Slim Fit",
+        "payment": null,
+        "user": null,
+        "color": "Red",
+        "size": "medium",
+        "brand": null,
+        "price": "12.00",
+        "quantity": 1,
+        "total_amount": "12.00",
+        "status": "pending",
+        "created": "2021-12-13T12:08:17.255Z",
+        "updated": "2022-01-04T07:07:42.549Z"
+    }
+},
+{
+    "model": "orders.orderproduct",
+    "pk": 2,
+    "fields": {
+        "order": 2,
+        "product": "64f471ed-f030-43ba-9075-312716bb6766",
+        "product_name": "H&M Polo Shirt Slim Fit",
+        "payment": null,
+        "user": null,
+        "color": "Red",
+        "size": "medium",
+        "brand": null,
+        "price": "12.00",
+        "quantity": 1,
+        "total_amount": "12.00",
+        "status": "pending",
+        "created": "2021-12-14T07:12:44.492Z",
+        "updated": "2022-01-04T07:07:42.655Z"
+    }
+},
+{
+    "model": "orders.orderproduct",
+    "pk": 3,
+    "fields": {
+        "order": 2,
+        "product": "ad9a5250-3cfb-4e29-8e61-b56c770ef393",
+        "product_name": "Sony HT-CT390 Ultra Slim Bluet",
+        "payment": null,
+        "user": null,
+        "color": null,
+        "size": null,
+        "brand": "Sony",
+        "price": "580.99",
+        "quantity": 2,
+        "total_amount": "1161.98",
+        "status": "pending",
+        "created": "2021-12-14T07:12:44.502Z",
+        "updated": "2022-01-04T07:07:42.669Z"
+    }
+},
+{
+    "model": "orders.orderproduct",
+    "pk": 4,
+    "fields": {
+        "order": 2,
+        "product": "8a677cdc-6bad-487b-abe5-c4a119832083",
+        "product_name": "Xiaomi HXM-R9-64-GRN-EU Redmi 9 Dual Sim",
+        "payment": null,
+        "user": null,
+        "color": null,
+        "size": null,
+        "brand": "Xioami",
+        "price": "569.99",
+        "quantity": 1,
+        "total_amount": "569.99",
+        "status": "pending",
+        "created": "2021-12-14T07:12:44.508Z",
+        "updated": "2022-01-04T07:07:42.685Z"
+    }
+},
+{
+    "model": "orders.orderproduct",
+    "pk": 5,
+    "fields": {
+        "order": 2,
+        "product": "a3dda727-0495-4f0f-b545-209831fcefd4",
+        "product_name": "Apple air pods 2",
+        "payment": null,
+        "user": null,
+        "color": null,
+        "size": null,
+        "brand": "Apple",
+        "price": "567.99",
+        "quantity": 1,
+        "total_amount": "567.99",
+        "status": "pending",
+        "created": "2021-12-14T07:12:44.514Z",
+        "updated": "2022-01-04T07:07:42.694Z"
+    }
+},
+{
+    "model": "orders.orderproduct",
+    "pk": 6,
+    "fields": {
+        "order": 2,
+        "product": "97ccf083-c658-4557-9e92-e1d2f7626b5a",
+        "product_name": "Winter Boots Leather for Men",
+        "payment": null,
+        "user": null,
+        "color": null,
+        "size": null,
+        "brand": null,
+        "price": "35.99",
+        "quantity": 2,
+        "total_amount": "71.98",
+        "status": "out for delivery",
+        "created": "2021-12-14T07:12:44.520Z",
+        "updated": "2022-01-05T15:25:39.556Z"
+    }
+},
+{
+    "model": "orders.orderproduct",
+    "pk": 7,
+    "fields": {
+        "order": 3,
+        "product": "64f471ed-f030-43ba-9075-312716bb6766",
+        "product_name": "H&M Polo Shirt Slim Fit",
+        "payment": null,
+        "user": null,
+        "color": "Red",
+        "size": "large",
+        "brand": null,
+        "price": "12.00",
+        "quantity": 1,
+        "total_amount": "12.00",
+        "status": "delivered",
+        "created": "2021-12-14T11:19:05.768Z",
+        "updated": "2022-01-05T14:53:46.244Z"
+    }
+},
+{
+    "model": "orders.orderproduct",
+    "pk": 8,
+    "fields": {
+        "order": 4,
+        "product": "2c3eb3c8-8201-4244-b1f4-d5c8406f13fe",
+        "product_name": "Anker Soundcore Flare 2 Bluetooth Speaker With Ipx",
+        "payment": null,
+        "user": [
+            "maya@company.com"
+        ],
+        "color": null,
+        "size": null,
+        "brand": "Anker",
+        "price": "100.00",
+        "quantity": 3,
+        "total_amount": "300.00",
+        "status": "delivered",
+        "created": "2021-12-15T07:47:41.505Z",
+        "updated": "2022-01-05T15:25:49.133Z"
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "007ded14ea40cdfebfe9b808fa597dbec60e4e19",
+    "fields": {
+        "user": [
+            "nzejoeworld@gmail.com"
+        ],
+        "created": "2022-02-21T20:08:06.257Z"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can view permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can add group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can change group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can view group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can view content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can add session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can change session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can view session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can add Token",
+        "content_type": [
+            "authtoken",
+            "token"
+        ],
+        "codename": "add_token"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can change Token",
+        "content_type": [
+            "authtoken",
+            "token"
+        ],
+        "codename": "change_token"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can delete Token",
+        "content_type": [
+            "authtoken",
+            "token"
+        ],
+        "codename": "delete_token"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can view Token",
+        "content_type": [
+            "authtoken",
+            "token"
+        ],
+        "codename": "view_token"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add token",
+        "content_type": [
+            "authtoken",
+            "tokenproxy"
+        ],
+        "codename": "add_tokenproxy"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change token",
+        "content_type": [
+            "authtoken",
+            "tokenproxy"
+        ],
+        "codename": "change_tokenproxy"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete token",
+        "content_type": [
+            "authtoken",
+            "tokenproxy"
+        ],
+        "codename": "delete_tokenproxy"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can view token",
+        "content_type": [
+            "authtoken",
+            "tokenproxy"
+        ],
+        "codename": "view_tokenproxy"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Can add account",
+        "content_type": [
+            "accounts",
+            "account"
+        ],
+        "codename": "add_account"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Can change account",
+        "content_type": [
+            "accounts",
+            "account"
+        ],
+        "codename": "change_account"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+        "name": "Can delete account",
+        "content_type": [
+            "accounts",
+            "account"
+        ],
+        "codename": "delete_account"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+        "name": "Can view account",
+        "content_type": [
+            "accounts",
+            "account"
+        ],
+        "codename": "view_account"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+        "name": "Can add Category",
+        "content_type": [
+            "store",
+            "category"
+        ],
+        "codename": "add_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+        "name": "Can change Category",
+        "content_type": [
+            "store",
+            "category"
+        ],
+        "codename": "change_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+        "name": "Can delete Category",
+        "content_type": [
+            "store",
+            "category"
+        ],
+        "codename": "delete_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+        "name": "Can view Category",
+        "content_type": [
+            "store",
+            "category"
+        ],
+        "codename": "view_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+        "name": "Can add product",
+        "content_type": [
+            "store",
+            "product"
+        ],
+        "codename": "add_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+        "name": "Can change product",
+        "content_type": [
+            "store",
+            "product"
+        ],
+        "codename": "change_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+        "name": "Can delete product",
+        "content_type": [
+            "store",
+            "product"
+        ],
+        "codename": "delete_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+        "name": "Can view product",
+        "content_type": [
+            "store",
+            "product"
+        ],
+        "codename": "view_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+        "name": "Can add variation",
+        "content_type": [
+            "store",
+            "variation"
+        ],
+        "codename": "add_variation"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+        "name": "Can change variation",
+        "content_type": [
+            "store",
+            "variation"
+        ],
+        "codename": "change_variation"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+        "name": "Can delete variation",
+        "content_type": [
+            "store",
+            "variation"
+        ],
+        "codename": "delete_variation"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+        "name": "Can view variation",
+        "content_type": [
+            "store",
+            "variation"
+        ],
+        "codename": "view_variation"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+        "name": "Can add review",
+        "content_type": [
+            "store",
+            "review"
+        ],
+        "codename": "add_review"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+        "name": "Can change review",
+        "content_type": [
+            "store",
+            "review"
+        ],
+        "codename": "change_review"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+        "name": "Can delete review",
+        "content_type": [
+            "store",
+            "review"
+        ],
+        "codename": "delete_review"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+        "name": "Can view review",
+        "content_type": [
+            "store",
+            "review"
+        ],
+        "codename": "view_review"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+        "name": "Can add item variation",
+        "content_type": [
+            "carts",
+            "itemvariation"
+        ],
+        "codename": "add_itemvariation"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+        "name": "Can change item variation",
+        "content_type": [
+            "carts",
+            "itemvariation"
+        ],
+        "codename": "change_itemvariation"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+        "name": "Can delete item variation",
+        "content_type": [
+            "carts",
+            "itemvariation"
+        ],
+        "codename": "delete_itemvariation"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+        "name": "Can view item variation",
+        "content_type": [
+            "carts",
+            "itemvariation"
+        ],
+        "codename": "view_itemvariation"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 53,
+    "fields": {
+        "name": "Can add cartitem",
+        "content_type": [
+            "carts",
+            "cartitem"
+        ],
+        "codename": "add_cartitem"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 54,
+    "fields": {
+        "name": "Can change cartitem",
+        "content_type": [
+            "carts",
+            "cartitem"
+        ],
+        "codename": "change_cartitem"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 55,
+    "fields": {
+        "name": "Can delete cartitem",
+        "content_type": [
+            "carts",
+            "cartitem"
+        ],
+        "codename": "delete_cartitem"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 56,
+    "fields": {
+        "name": "Can view cartitem",
+        "content_type": [
+            "carts",
+            "cartitem"
+        ],
+        "codename": "view_cartitem"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 57,
+    "fields": {
+        "name": "Can add cart",
+        "content_type": [
+            "carts",
+            "cart"
+        ],
+        "codename": "add_cart"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 58,
+    "fields": {
+        "name": "Can change cart",
+        "content_type": [
+            "carts",
+            "cart"
+        ],
+        "codename": "change_cart"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 59,
+    "fields": {
+        "name": "Can delete cart",
+        "content_type": [
+            "carts",
+            "cart"
+        ],
+        "codename": "delete_cart"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 60,
+    "fields": {
+        "name": "Can view cart",
+        "content_type": [
+            "carts",
+            "cart"
+        ],
+        "codename": "view_cart"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 61,
+    "fields": {
+        "name": "Can add order detail",
+        "content_type": [
+            "orders",
+            "orderdetail"
+        ],
+        "codename": "add_orderdetail"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 62,
+    "fields": {
+        "name": "Can change order detail",
+        "content_type": [
+            "orders",
+            "orderdetail"
+        ],
+        "codename": "change_orderdetail"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 63,
+    "fields": {
+        "name": "Can delete order detail",
+        "content_type": [
+            "orders",
+            "orderdetail"
+        ],
+        "codename": "delete_orderdetail"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 64,
+    "fields": {
+        "name": "Can view order detail",
+        "content_type": [
+            "orders",
+            "orderdetail"
+        ],
+        "codename": "view_orderdetail"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 65,
+    "fields": {
+        "name": "Can add payment",
+        "content_type": [
+            "orders",
+            "payment"
+        ],
+        "codename": "add_payment"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 66,
+    "fields": {
+        "name": "Can change payment",
+        "content_type": [
+            "orders",
+            "payment"
+        ],
+        "codename": "change_payment"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 67,
+    "fields": {
+        "name": "Can delete payment",
+        "content_type": [
+            "orders",
+            "payment"
+        ],
+        "codename": "delete_payment"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 68,
+    "fields": {
+        "name": "Can view payment",
+        "content_type": [
+            "orders",
+            "payment"
+        ],
+        "codename": "view_payment"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 69,
+    "fields": {
+        "name": "Can add order product",
+        "content_type": [
+            "orders",
+            "orderproduct"
+        ],
+        "codename": "add_orderproduct"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 70,
+    "fields": {
+        "name": "Can change order product",
+        "content_type": [
+            "orders",
+            "orderproduct"
+        ],
+        "codename": "change_orderproduct"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 71,
+    "fields": {
+        "name": "Can delete order product",
+        "content_type": [
+            "orders",
+            "orderproduct"
+        ],
+        "codename": "delete_orderproduct"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 72,
+    "fields": {
+        "name": "Can view order product",
+        "content_type": [
+            "orders",
+            "orderproduct"
+        ],
+        "codename": "view_orderproduct"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 73,
+    "fields": {
+        "name": "Can add product gallery",
+        "content_type": [
+            "store",
+            "productgallery"
+        ],
+        "codename": "add_productgallery"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 74,
+    "fields": {
+        "name": "Can change product gallery",
+        "content_type": [
+            "store",
+            "productgallery"
+        ],
+        "codename": "change_productgallery"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 75,
+    "fields": {
+        "name": "Can delete product gallery",
+        "content_type": [
+            "store",
+            "productgallery"
+        ],
+        "codename": "delete_productgallery"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 76,
+    "fields": {
+        "name": "Can view product gallery",
+        "content_type": [
+            "store",
+            "productgallery"
+        ],
+        "codename": "view_productgallery"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 79,
+    "fields": {
+        "action_time": "2022-02-21T12:19:58.568Z",
+        "user": [
+            "nzejoeworld@gmail.com"
+        ],
+        "content_type": [
+            "carts",
+            "cart"
+        ],
+        "object_id": "10",
+        "object_repr": "yl8mzmztuf1ay4z18gnrvvu1t6fbgk0l",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 80,
+    "fields": {
+        "action_time": "2022-02-21T12:19:58.885Z",
+        "user": [
+            "nzejoeworld@gmail.com"
+        ],
+        "content_type": [
+            "carts",
+            "cart"
+        ],
+        "object_id": "9",
+        "object_repr": "aqsak3qe830fl59pm23cts75pdvc1k2q",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 81,
+    "fields": {
+        "action_time": "2022-02-21T12:19:58.887Z",
+        "user": [
+            "nzejoeworld@gmail.com"
+        ],
+        "content_type": [
+            "carts",
+            "cart"
+        ],
+        "object_id": "8",
+        "object_repr": "y0qt9lser1v1y80kloki2r9iumbw7b9v",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 82,
+    "fields": {
+        "action_time": "2022-02-21T12:19:58.889Z",
+        "user": [
+            "nzejoeworld@gmail.com"
+        ],
+        "content_type": [
+            "carts",
+            "cart"
+        ],
+        "object_id": "7",
+        "object_repr": "cfgdwtn279rkid7drq2vifte3pcxuunv",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 83,
+    "fields": {
+        "action_time": "2022-02-21T12:19:58.892Z",
+        "user": [
+            "nzejoeworld@gmail.com"
+        ],
+        "content_type": [
+            "carts",
+            "cart"
+        ],
+        "object_id": "6",
+        "object_repr": "31pk434iq5ow2uery6vvoqcio538y95x",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 84,
+    "fields": {
+        "action_time": "2022-02-21T12:19:58.893Z",
+        "user": [
+            "nzejoeworld@gmail.com"
+        ],
+        "content_type": [
+            "carts",
+            "cart"
+        ],
+        "object_id": "5",
+        "object_repr": "deuaqj9a9f4lbh926xh68tzx6ttcf65x",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 85,
+    "fields": {
+        "action_time": "2022-02-21T12:19:58.896Z",
+        "user": [
+            "nzejoeworld@gmail.com"
+        ],
+        "content_type": [
+            "carts",
+            "cart"
+        ],
+        "object_id": "4",
+        "object_repr": "6zxbz6q6ziw6h6rc10cjpyiejvfsdxwa",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 86,
+    "fields": {
+        "action_time": "2022-02-21T12:19:58.898Z",
+        "user": [
+            "nzejoeworld@gmail.com"
+        ],
+        "content_type": [
+            "carts",
+            "cart"
+        ],
+        "object_id": "3",
+        "object_repr": "pltwi7anhs5mwbaee8r6zci2lfvzha17",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 87,
+    "fields": {
+        "action_time": "2022-02-21T12:19:58.973Z",
+        "user": [
+            "nzejoeworld@gmail.com"
+        ],
+        "content_type": [
+            "carts",
+            "cart"
+        ],
+        "object_id": "2",
+        "object_repr": "lxgoctr56cusiqxmjhkj0sgff2ba5mc4",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 88,
+    "fields": {
+        "action_time": "2022-02-21T12:19:58.994Z",
+        "user": [
+            "nzejoeworld@gmail.com"
+        ],
+        "content_type": [
+            "carts",
+            "cart"
+        ],
+        "object_id": "1",
+        "object_repr": "j093cxjmmvapnf6027puep5m267zbxng",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 89,
+    "fields": {
+        "action_time": "2022-02-21T12:55:31.498Z",
+        "user": [
+            "nzejoeworld@gmail.com"
+        ],
+        "content_type": [
+            "carts",
+            "cart"
+        ],
+        "object_id": "12",
+        "object_repr": "yl8mzmztuf1ay4z18gnrvvu1t6fbgk0l",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 90,
+    "fields": {
+        "action_time": "2022-02-21T12:55:31.535Z",
+        "user": [
+            "nzejoeworld@gmail.com"
+        ],
+        "content_type": [
+            "carts",
+            "cart"
+        ],
+        "object_id": "11",
+        "object_repr": "7utvqyv25kdh5cmucj9vymlahurgfamw",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 91,
+    "fields": {
+        "action_time": "2022-02-21T19:32:02.253Z",
+        "user": [
+            "nzejoeworld@gmail.com"
+        ],
+        "content_type": [
+            "carts",
+            "itemvariation"
+        ],
+        "object_id": "28",
+        "object_repr": "None-None-Sony",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 92,
+    "fields": {
+        "action_time": "2022-02-21T19:32:02.587Z",
+        "user": [
+            "nzejoeworld@gmail.com"
+        ],
+        "content_type": [
+            "carts",
+            "itemvariation"
+        ],
+        "object_id": "27",
+        "object_repr": "None-None-Sony",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 93,
+    "fields": {
+        "action_time": "2022-02-21T19:32:02.589Z",
+        "user": [
+            "nzejoeworld@gmail.com"
+        ],
+        "content_type": [
+            "carts",
+            "itemvariation"
+        ],
+        "object_id": "26",
+        "object_repr": "None-None-Sony",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 94,
+    "fields": {
+        "action_time": "2022-02-21T19:32:02.591Z",
+        "user": [
+            "nzejoeworld@gmail.com"
+        ],
+        "content_type": [
+            "carts",
+            "itemvariation"
+        ],
+        "object_id": "25",
+        "object_repr": "None-None-Sony",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 95,
+    "fields": {
+        "action_time": "2022-02-21T19:32:02.594Z",
+        "user": [
+            "nzejoeworld@gmail.com"
+        ],
+        "content_type": [
+            "carts",
+            "itemvariation"
+        ],
+        "object_id": "24",
+        "object_repr": "None-None-Sony",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 96,
+    "fields": {
+        "action_time": "2022-02-21T19:32:02.596Z",
+        "user": [
+            "nzejoeworld@gmail.com"
+        ],
+        "content_type": [
+            "carts",
+            "itemvariation"
+        ],
+        "object_id": "23",
+        "object_repr": "Red-medium-None",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 97,
+    "fields": {
+        "action_time": "2022-02-21T19:32:02.598Z",
+        "user": [
+            "nzejoeworld@gmail.com"
+        ],
+        "content_type": [
+            "carts",
+            "itemvariation"
+        ],
+        "object_id": "22",
+        "object_repr": "Red-medium-None",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 98,
+    "fields": {
+        "action_time": "2022-02-21T19:32:02.599Z",
+        "user": [
+            "nzejoeworld@gmail.com"
+        ],
+        "content_type": [
+            "carts",
+            "itemvariation"
+        ],
+        "object_id": "21",
+        "object_repr": "None-None-Apple",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 99,
+    "fields": {
+        "action_time": "2022-02-21T19:32:02.601Z",
+        "user": [
+            "nzejoeworld@gmail.com"
+        ],
+        "content_type": [
+            "carts",
+            "itemvariation"
+        ],
+        "object_id": "20",
+        "object_repr": "None-None-Anker",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 100,
+    "fields": {
+        "action_time": "2022-02-21T19:32:02.603Z",
+        "user": [
+            "nzejoeworld@gmail.com"
+        ],
+        "content_type": [
+            "carts",
+            "itemvariation"
+        ],
+        "object_id": "19",
+        "object_repr": "None-None-Apple",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 101,
+    "fields": {
+        "action_time": "2022-02-21T19:32:02.605Z",
+        "user": [
+            "nzejoeworld@gmail.com"
+        ],
+        "content_type": [
+            "carts",
+            "itemvariation"
+        ],
+        "object_id": "18",
+        "object_repr": "Green-medium-None",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 102,
+    "fields": {
+        "action_time": "2022-02-21T19:32:02.607Z",
+        "user": [
+            "nzejoeworld@gmail.com"
+        ],
+        "content_type": [
+            "carts",
+            "itemvariation"
+        ],
+        "object_id": "17",
+        "object_repr": "Green-medium-None",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 103,
+    "fields": {
+        "action_time": "2022-02-21T19:32:02.608Z",
+        "user": [
+            "nzejoeworld@gmail.com"
+        ],
+        "content_type": [
+            "carts",
+            "itemvariation"
+        ],
+        "object_id": "16",
+        "object_repr": "Red-large-None",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 104,
+    "fields": {
+        "action_time": "2022-02-21T19:32:02.611Z",
+        "user": [
+            "nzejoeworld@gmail.com"
+        ],
+        "content_type": [
+            "carts",
+            "itemvariation"
+        ],
+        "object_id": "15",
+        "object_repr": "Red-medium-None",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 105,
+    "fields": {
+        "action_time": "2022-02-21T19:32:02.612Z",
+        "user": [
+            "nzejoeworld@gmail.com"
+        ],
+        "content_type": [
+            "carts",
+            "itemvariation"
+        ],
+        "object_id": "14",
+        "object_repr": "None-None-None",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 106,
+    "fields": {
+        "action_time": "2022-02-21T19:32:02.614Z",
+        "user": [
+            "nzejoeworld@gmail.com"
+        ],
+        "content_type": [
+            "carts",
+            "itemvariation"
+        ],
+        "object_id": "13",
+        "object_repr": "None-None-None",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 107,
+    "fields": {
+        "action_time": "2022-02-21T19:32:02.615Z",
+        "user": [
+            "nzejoeworld@gmail.com"
+        ],
+        "content_type": [
+            "carts",
+            "itemvariation"
+        ],
+        "object_id": "12",
+        "object_repr": "None-None-Anker",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 108,
+    "fields": {
+        "action_time": "2022-02-21T19:32:02.617Z",
+        "user": [
+            "nzejoeworld@gmail.com"
+        ],
+        "content_type": [
+            "carts",
+            "itemvariation"
+        ],
+        "object_id": "11",
+        "object_repr": "None-None-Anker",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 109,
+    "fields": {
+        "action_time": "2022-02-21T19:32:02.619Z",
+        "user": [
+            "nzejoeworld@gmail.com"
+        ],
+        "content_type": [
+            "carts",
+            "itemvariation"
+        ],
+        "object_id": "10",
+        "object_repr": "None-None-Anker",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 110,
+    "fields": {
+        "action_time": "2022-02-21T19:32:02.630Z",
+        "user": [
+            "nzejoeworld@gmail.com"
+        ],
+        "content_type": [
+            "carts",
+            "itemvariation"
+        ],
+        "object_id": "9",
+        "object_repr": "None-None-Anker",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 111,
+    "fields": {
+        "action_time": "2022-02-21T19:32:02.632Z",
+        "user": [
+            "nzejoeworld@gmail.com"
+        ],
+        "content_type": [
+            "carts",
+            "itemvariation"
+        ],
+        "object_id": "8",
+        "object_repr": "Red-large-None",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 112,
+    "fields": {
+        "action_time": "2022-02-21T19:32:02.634Z",
+        "user": [
+            "nzejoeworld@gmail.com"
+        ],
+        "content_type": [
+            "carts",
+            "itemvariation"
+        ],
+        "object_id": "7",
+        "object_repr": "None-None-None",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 113,
+    "fields": {
+        "action_time": "2022-02-21T19:32:02.635Z",
+        "user": [
+            "nzejoeworld@gmail.com"
+        ],
+        "content_type": [
+            "carts",
+            "itemvariation"
+        ],
+        "object_id": "6",
+        "object_repr": "None-None-Apple",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 114,
+    "fields": {
+        "action_time": "2022-02-21T19:32:02.637Z",
+        "user": [
+            "nzejoeworld@gmail.com"
+        ],
+        "content_type": [
+            "carts",
+            "itemvariation"
+        ],
+        "object_id": "5",
+        "object_repr": "None-None-Xioami",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 115,
+    "fields": {
+        "action_time": "2022-02-21T19:32:02.639Z",
+        "user": [
+            "nzejoeworld@gmail.com"
+        ],
+        "content_type": [
+            "carts",
+            "itemvariation"
+        ],
+        "object_id": "4",
+        "object_repr": "None-None-Sony",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 116,
+    "fields": {
+        "action_time": "2022-02-21T19:32:02.641Z",
+        "user": [
+            "nzejoeworld@gmail.com"
+        ],
+        "content_type": [
+            "carts",
+            "itemvariation"
+        ],
+        "object_id": "3",
+        "object_repr": "Red-medium-None",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 117,
+    "fields": {
+        "action_time": "2022-02-21T19:32:02.643Z",
+        "user": [
+            "nzejoeworld@gmail.com"
+        ],
+        "content_type": [
+            "carts",
+            "itemvariation"
+        ],
+        "object_id": "2",
+        "object_repr": "Red-medium-None",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 118,
+    "fields": {
+        "action_time": "2022-02-21T19:32:02.644Z",
+        "user": [
+            "nzejoeworld@gmail.com"
+        ],
+        "content_type": [
+            "carts",
+            "itemvariation"
+        ],
+        "object_id": "1",
+        "object_repr": "None-None-None",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 119,
+    "fields": {
+        "action_time": "2022-02-21T19:33:07.612Z",
+        "user": [
+            "nzejoeworld@gmail.com"
+        ],
+        "content_type": [
+            "carts",
+            "itemvariation"
+        ],
+        "object_id": "29",
+        "object_repr": "None-None-Apple",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 120,
+    "fields": {
+        "action_time": "2022-02-21T19:34:41.206Z",
+        "user": [
+            "nzejoeworld@gmail.com"
+        ],
+        "content_type": [
+            "carts",
+            "cartitem"
+        ],
+        "object_id": "29",
+        "object_repr": "Apple Homkit - Ecobee3 Lite Smart Thermostat",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 121,
+    "fields": {
+        "action_time": "2022-02-21T19:56:39.254Z",
+        "user": [
+            "nzejoeworld@gmail.com"
+        ],
+        "content_type": [
+            "carts",
+            "itemvariation"
+        ],
+        "object_id": "29",
+        "object_repr": "None-None-Apple",
+        "action_flag": 3,
+        "change_message": ""
+    }
+}
+]
