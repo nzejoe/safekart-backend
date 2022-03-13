@@ -91,29 +91,16 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-
-if DEBUG:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql',
-            'NAME': 'safekart',
-            'USER': 'postgres',
-            'PASSWORD': env.str('DATABASE_PASSWORD'),
-            'PORT': 5432,
-            'HOST': 'localhost',
-        }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': env.str('DATABASE_NAME'),
+        'USER': env.str('DATABASE_USER'),
+        'PASSWORD': env.str('DATABASE_PASSWORD'),
+        'PORT': 5432,
+        'HOST': env.str('DATABASE_HOST'),
     }
-else:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql',
-            'NAME': env.str('DATABASE_NAME'),
-            'USER': env.str('DATABASE_USER'),
-            'PASSWORD': env.str('DATABASE_PASSWORD'),
-            'PORT': 5432,
-            'HOST': env.str('DATABASE_HOST'),
-        }
-    }
+}
 
 
 # Password validation
