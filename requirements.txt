@@ -6,7 +6,7 @@ boto3==1.21.2
 botocore==1.24.2
 dj-database-url==0.5.0
 dj-email-url==1.0.2
-Django==4.0
+Django==3.2.16
 django-appconf==1.0.5
 django-cache-url==3.2.3
 django-cors-headers==3.10.1
