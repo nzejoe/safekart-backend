@@ -30,7 +30,7 @@ SECRET_KEY = env.str('SECRET_KEY')
 DEBUG = env.bool('DEBUG')
 
 ALLOWED_HOSTS = ['codegenesis-safekart.herokuapp.com',
-                 'codegenesis-safekart.netlify.app', 'localhost', "safekart.onrender.com", "http://localhost:4000"]
+                 'codegenesis-safekart.netlify.app', 'localhost', "safekart.onrender.com"]
 
 
 # Application definition
@@ -155,6 +155,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ORIGIN_WHITELIST = [
     "http://localhost:3000",
     "http://localhost:3001",
+    "http://localhost:4000",
     'https://codegenesis-safekart.netlify.app',
 ]
 # CORS_ORIGIN_ALLOW_ALL = True
