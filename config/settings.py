@@ -30,7 +30,7 @@ SECRET_KEY = env.str('SECRET_KEY')
 DEBUG = env.bool('DEBUG')
 
 ALLOWED_HOSTS = ['codegenesis-safekart.herokuapp.com',
-                 'codegenesis-safekart.netlify.app', 'localhost', "safekart.onrender.com"]
+                 'codegenesis-safekart.netlify.app', 'localhost', "safekart.onrender.com", "http://localhost:4000"]
 
 
 # Application definition
