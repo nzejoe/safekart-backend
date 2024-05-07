@@ -157,6 +157,7 @@ CORS_ORIGIN_WHITELIST = [
     "http://localhost:3001",
     "http://localhost:4000",
     'https://codegenesis-safekart.netlify.app',
+    "https://ecomarket-portfolio.netlify.app",
 ]
 # CORS_ORIGIN_ALLOW_ALL = True
 
