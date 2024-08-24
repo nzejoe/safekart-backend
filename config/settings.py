@@ -153,11 +153,12 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # corsheaders config
 
 CORS_ORIGIN_WHITELIST = [
-    "http://localhost:3000",
-    "http://localhost:3001",
-    "http://localhost:4000",
     'https://codegenesis-safekart.netlify.app',
     "https://ecomarket-portfolio.netlify.app",
+]
+
+CORS_ORIGIN_REGEX_WHITELIST = [
+    r"^http://localhost:\d+$",  # Matches all localhost ports
 ]
 # CORS_ORIGIN_ALLOW_ALL = True
 
