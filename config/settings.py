@@ -155,6 +155,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ORIGIN_WHITELIST = [
     'https://codegenesis-safekart.netlify.app',
     "https://ecomarket-portfolio.netlify.app",
+    "https://ecomarketplace.netlify.app",
 ]
 
 CORS_ORIGIN_REGEX_WHITELIST = [
